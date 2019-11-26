@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #3D3D3D;
+            margin: 0;
+        }
+
+        button {
+            border: inherit;
+        }
+
+        header {
+            background: #A8AD1E;
+            height: 13vh;
+            color: white;
+            font-family: Open Sans;
+            font-size: 5em;
+            letter-spacing: 0.1em;
+            text-align: left;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-left: 40px;
+            padding-bottom: 20px;
+        }
+
+        header img {
+            float: right;
+            height: 7.5vh;
+            margin: 20px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        span button {
+            background: #FF7A00;
+            border-radius: 100px;
+            color: white;
+            width: 20vw;
+            height: 20vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            margin-top: 5vh;
+            margin-bottom: 1vw;
+        }
+
+        span button img {
+            height: 15vw;
+        }
+
+        span p {
+            color: white;
+            font-family: open sans;
+            font-size: 2em;
+        }
+
+        .green {
+            background: #A8AD1E;
+            border-radius: 20px;
+            width: 70vw;
+            color: white;
+            font-family: Open Sans;
+            font-size: 2em;
+            font-weight: 600;
+            align-items: center;
+            text-align: center;
+            height: 10vw;
+        }
+
+        .green:nth-of-type(1) {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .green:nth-of-type(2) {
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header><img src="assets/x-circle.svg">
+        Signaler <br>
+        un incident
+    </header>
+
+    <div>
+        <span>
+            <button><img src="assets/"></button>
+            <p>Animaux</p>
+        </span>
+        <span><button><img src="assets/rocks.svg"></button>
+            <p>Eboulement</p>
+        </span>
+        <span><button><img src="assets/saw.svg"></button>
+            <p>Chute d'arbre</p>
+        </span>
+        <span><button><img src="assets/lightning.svg"></button>
+            <p>Conditions Climatiques</p>
+        </span>
+        <span><button><img src="assets/flood.svg"></button>
+            <p>Inondonations</p>
+        </span>
+        <span><button><img src="assets/earthquake.svg"></button>
+            <p>Affaissement</p>
+        </span>
+
+        <a href="signal_form.html"><button class="green">Ajouter une photo/commentaire</button><br>
+            <button class="green">ENVOYER</button></a>
+    </div>
+</body>
+
+</html>
