@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("ossau.png");
+            background-size: cover;
+            background-position-x: 75%;
+            background-blend-mode: darken;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* logo haut gauche */
+        header img:nth-of-type(1) {
+            width: 40vw;
+            float: left;
+        }
+
+        /* parametres */
+        header img:nth-of-type(2) {
+            width: 10vw;
+            float: right;
+            margin: 5vw 5vw;
+        }
+
+        header {
+            min-height: 25vh;
+        }
+
+        /* rand'ossau text et montagne */
+
+        /* rand */
+        figure img:nth-of-type(1),
+        figure img:nth-of-type(2),
+        figure img:nth-of-type(3),
+        figure img:nth-of-type(4) {
+            height: 7.5vh;
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+
+        /* apostrophe */
+        figure img:nth-of-type(5) {
+            height: 2vh;
+            margin-left: 0;
+            vertical-align: top;
+        }
+
+        /* montange */
+        figure img:nth-of-type(6) {
+            margin-left: -2vh;
+            height: 8.5vh;
+        }
+
+        /* ossau */
+        figure img:nth-of-type(7),
+        figure img:nth-of-type(8),
+        figure img:nth-of-type(9),
+        figure img:nth-of-type(10),
+        figure img:nth-of-type(11) {
+            height: 12.5vh;
+            margin-left: -18px;
+            margin-right: -18px;
+        }
+
+        /*buttons*/
+        div {
+            display: flex space-between;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 5vh;
+            overflow: hidden;
+        }
+
+        div button {
+            overflow: hidden;
+            background: #3D3D3D;
+            border: 5px solid #FFFFFF;
+            border-radius: 25px;
+            width: 30vw;
+            height: 30vw;
+            margin: 2.5vw 2.5vw;
+            padding-top: 20px;
+        }
+
+        div button p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 550;
+            font-size: 3em;
+            text-align: center;
+            color: #A8AD1E;
+        }
+
+        div button img {
+            height: 15vw;
+            width: 15vw;
+        }
+
+        .small {
+            height: 12.5vw;
+            width: 12.5vw;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <img src="logos/logo.png">
+        <img src="icons/settings.svg">
+    </header>
+
+    <!-- titre -->
+    <figure>
+        <img src="logos/r_bleu.svg">
+        <img src="logos/a_bleu.svg">
+        <img src="logos/n_bleu.svg">
+        <img src="logos/d-bleu.svg">
+        <img src="logos/apo_bleu.svg">
+        <img src="logos/mountain.svg">
+        <br>
+        <img src="logos/o_vert.svg">
+        <img src="logos/s_vert.svg">
+        <img src="logos/s_vert.svg">
+        <img src="logos/a_vert.svg">
+        <img src="logos/u_vert.svg">
+    </figure>
+
+    <!-- buttons -->
+    <div>
+        <button>
+            <img class="small" src="icons/cycle.svg">
+            <img class="small" src="icons/walk.svg">
+            <p>PARCOURS</p>
+        </button>
+        <button>
+            <img src="icons/map.svg">
+            <p>CARTES</p>
+        </button>
+        <button>
+            <img src="icons/alert.svg">
+            <p>SIGNALEMENT</p>
+        </button>
+        <button>
+            <img src="icons/gps.svg">
+            <p>GPS</p>
+        </button>
+    </div>
+</body>
+
+</html>
