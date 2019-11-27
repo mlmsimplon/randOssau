@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+article {
+    background: white;
+    border-radius: 15px;
+    width: 90vw;
+    height: 60vh;
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+
+article button{
+    background-color: #A8AD1E;
+    position: absolute;
+    top: 58vh;
+    left: 40vw;
+    border: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+article, article ul, article ul li, main {
+    display: block;
+}
+
+article ul li, article h1 {
+    width: 85vw;
+    min-height: 7.5vh;
+    max-height: 9vh;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 1.8em;
+    border-radius: 15px;
+    margin-top: 7.5px;
+    margin-left: 2.5vw;
+}
+
+article p {
+    color: #000000;
+    letter-spacing: 0.1em;
+    line-height: 23px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+article img {
+    height: 42px;
+    width: 42px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+article p img{
+    margin: 0;
+}
+
+article ul li:nth-of-type(odd) {
+    background-color: #A8AD1E;
+}
+
+article ul li:nth-of-type(even) {
+    background-color: #3D3D3D;
+}
