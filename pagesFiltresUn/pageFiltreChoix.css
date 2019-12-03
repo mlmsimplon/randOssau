@@ -49,51 +49,27 @@ li{
 }
 
 
-#button{
+#but{
     background-color: #A8AD1E;
-    width: 300px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     justify-content: center;
     height: auto;
-    border-radius: 5px;
+    border-radius: 13px;
 }
 
-a{
-    color: #A8AD1E;
-    text-decoration: none;
-}
-main {
-width: 100vw;
-height: 100vh;
-  
-}
-article{
+
+/*article{
     display: flex;
     width: 100vw;
-    height: 20vh;
+    height: auto;
     border: 1px solid #A8AD1E ;
-}
+}*/
 
 
-.img {
-    width: 100vw;
-    display: flex;
-   
-}
 .icons {
     display: flex;
     width: 50vw;
     height: 10vh;
-}
-.slider{
-    width: 40px;
-    height: 40px;
-    border: 0;
-    background: url('contrasticon.png');
-    cursor: pointer;
-} 
-
-.text {
-width: 50vw;
 }
 
