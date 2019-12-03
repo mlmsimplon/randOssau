@@ -32,7 +32,7 @@ article, article ul, article ul li, main {
     display: block;
 }
 
-article ul li, article h1 {
+article h1 {
     width: 85vw;
     min-height: 7.5vh;
     max-height: 9vh;
@@ -61,12 +61,4 @@ article img {
 
 article p img{
     margin: 0;
-}
-
-article ul li:nth-of-type(odd) {
-    background-color: #A8AD1E;
-}
-
-article ul li:nth-of-type(even) {
-    background-color: #3D3D3D;
 }

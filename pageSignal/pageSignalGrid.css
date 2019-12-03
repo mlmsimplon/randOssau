@@ -1,16 +1,7 @@
-/* *{
-    text-size-adjust: none;
-} */
-
 body {
     text-align: center;
     background-color: #3D3D3D;
     margin: 0;
-}
-
-a{
-    text-decoration: inherit;
-    color: inherit;
 }
 
 button {
@@ -19,10 +10,11 @@ button {
 
 header {
     background: #A8AD1E;
+    width: 120vw;
     height: auto;
     color: white;
     font-family: Open Sans;
-    font-size: 2.5rem;
+    font-size: 80px;
     letter-spacing: 0.1em;
     text-align: left;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -36,18 +28,15 @@ header img {
     margin: 20px;
 }
 
-.wrap {
-    /* display: grid;
+div {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 100vw;
     height: 70vh;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-div div button {
+span button {
     background: #FF7A00;
     border-radius: 100px;
     color: white;
@@ -60,14 +49,14 @@ div div button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-div div button img {
+span button img {
     height: 15vw;
 }
 
-div div p {
+span p {
     color: white;
     font-family: open sans;
-    font-size: 1rem;
+    font-size: 32px;
 }
 
 .green {
@@ -76,7 +65,7 @@ div div p {
     width: 70vw;
     color: white;
     font-family: Open Sans;
-    font-size: 0.8rem;
+    font-size: 32px;
     font-weight: 600;
     align-items: center;
     text-align: center;
@@ -84,10 +73,11 @@ div div p {
 }
 
 .green:nth-of-type(1) {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .green:nth-of-type(2) {
-    margin-bottom: 20px;
+    padding: 20px 20px;
+    margin-bottom: 25px;
 }

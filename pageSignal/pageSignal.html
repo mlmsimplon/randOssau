@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
+    <title>Signaler un Incident</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="pageSignal.css">
 </head>
 
 <body>
-
-    <header><img src="../assets/icons/x-circle.svg">
+    <header><img alt="retour" src="../assets/icons/x-circle.svg">
         Signaler <br>
         un incident
     </header>
 
-    <div>
-        <span>
-            <button><img src="../assets/icons/bear.png"></button>
+    <div class="wrap">
+        <div>
+            <button><img alt="Animaux" src="../assets/icons/bear.png"></button>
             <p>Animaux</p>
-        </span>
-        <span><button><img src="../assets/icons/rocks.svg"></button>
+        </div>
+        <div>
+            <button><img alt="Eboulement" src="../assets/icons/rocks.svg"></button>
             <p>Eboulement</p>
-        </span>
-        <span><button><img src="../assets/icons/saw.svg"></button>
-            <p>Chute d'arbres</p>
-        </span>
-        <span><button><img src="../assets/icons/lightning.svg"></button>
-            <p>Conditions Climatiques</p>
-        </span>
-        <span><button><img src="../assets/icons/flood.svg"></button>
-            <p>Inondations</p>
-        </span>
-        <span><button><img src="../assets/icons/balisage.png"></button>
-            <p>Balisage</p>
-        </span>
+        </div>
+        <div>
+            <button><img alt="Chute d'arbre" src="../assets/icons/saw.svg"></button>
+            <p>Chute <br>d'arbre</p>
+        </div>
+        <div>
+            <button><img alt="Conditions Climatiques" src="../assets/icons/lightning.svg"></button>
+            <p>Conditions <br>Climatiques</p>
+        </div>
+        <div>
+            <button><img alt="Inondonations" src="../assets/icons/flood.svg"></button>
+            <p>Inondonations</p>
+        </div>
+        <div>
+            <button><img alt="Affaissement" src="../assets/icons/earthquake.svg"></button>
+            <p>Affaissement</p>
+        </div>
 
-        <a href="pageSignalForm.html"><button class="green">Ajouter une photo/commentaire</button><br>
-            <button class="green">ENVOYER</button></a>
+        <button onclick="window.location.href = 'pageSignalForm.html';" class="green">Ajouter une
+            photo/commentaire</button>
+        <button onclick="window.location.href = 'pageSignalForm.html';" class="green">ENVOYER</button>
     </div>
 </body>
 
