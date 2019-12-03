@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation GPS</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="./defautCss.css">
+        <link rel="stylesheet" href="./nav.css">
+<body>
+
+    <header>
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+        <h1>
+            <!-- Merci de modifié ce titre pour chaque page, merci-->
+            Localisation
+        </h1>
+    </header>
+
+    <main>
+
+
+    </main>
+
+    <article>
+         <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+            <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+            <div id='map' style='width: 400px; height: 300px;'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ';
+              var map = new mapboxgl.Map({container: 'map', style: 'mapbox://styles/mapbox/streets-v11'});
+         </script>
+    </article>
+
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="..." class="fas fa-book-reader"></a>
+                </li>
+                <li>
+                    <a href="..." class="fas fa-star"></a>
+                </li>
+                <li>
+                    <a href="..." class="fas fa-exclamation-triangle"></a>
+                </li>
+            </ul>
+         </nav>
+    </footer>
+
+    <!-- Laisser ce script pour avoir un joli menu-->
+    <script src="../pageNavBar/navbar.js"></script>
+
+
+</body>
+</html>
+
+</html>
