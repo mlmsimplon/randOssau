@@ -11,7 +11,76 @@
         <link rel="stylesheet" href="../pageNavBar/nav.css">
         <link rel="stylesheet" type="text/css" href="pageFiltreChoix.css">
 <body>
+<style>body {
+    text-align: center;
+}
 
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+main {
+    display: flex;
+    justify-content: center;
+width: 100vw;
+height: 100vh;
+
+}
+article {
+    background: white;
+    border-radius: 15px;
+  width: 90VW;
+    height: fit-content;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    padding-top: 1vh;
+}
+
+button{
+    background-color: #A8AD1E;
+    position: absolute;
+    color: white;
+    top: 85vh;
+    left: 45vw;
+    border: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+article, article ul, article ul li, main {
+    display: block;
+}
+
+
+.icons {
+    width: 30vw;
+    height: 15vh;
+
+    color: #000000;
+    letter-spacing: 0.1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.text {
+    width: 60vw;
+    height: 20vh;
+    color: #000000;
+    letter-spacing: 0.1em;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.box {
+    width: 30vw;
+    height: 10vh;
+    color: #000000;
+    letter-spacing: 0.1em;
+    margin-right: 40px;
+}
+
+    </style>
     <header>
         <nav>
             <ul>
@@ -28,52 +97,54 @@
         <article>
  <div class="icons">
      <p>
-         <img src="./iconic/cycle.svg" alt="cycle"> </p>
-    <p> <img src="./iconic/walk.svg" alt="walk"> </p>
-    <div>
-       
+         <img src="./iconic/cycle.svg" alt="cycle"> 
+    <img src="./iconic/walk.svg" alt="walk"> </p>
+ </div>
 
  <div class="text">
-     <p> Plus proche de moi</p>
- <div class="range2"> 
-  <p><input type="range" min="0" max="2" value="1" class="slider" id="myRange"></p>
+     <p> Plus proche de moi
+ <input type="range" name="range" id="range1"> </p>
+ 
+ <div class="box">
+    <p>Rechercher par nom <br> 
+    <input type="search" name="choice" id="recherche" placeholder="Les crêtes d'An...">
+ </p>
+</div>
  </div>
+</article>
 
- </div>
+
+<article>
+    <div class="dif">
+       <p> Difficultés</p>
+       <p>
+           <input type="range" name="range" id="range2">
+       </p>
+    </div>
 
 </article>
 
-        <article>
-<div class="box">
-    <p>Rechercher par nom</p> 
-    <input type="search" name="choice" id="recherche" placeholder="Les crêtes d'An...">
-</div>
-       </article>
-
     
        <article>
-           <div class="diff">
-          
-               </p>
-           </div>
-    
+          <div class="dis">
+           <p>Distance</p> 
+        <p>
+            <input type="range" name="range" id="range3">
+        </p>  </div>
       </article>
 
       <article>
-<div>
-
+<div class="dur">
+    <p>Durée</p>
+    <p>
+        <input type="range" name="range" id="range4">
+    </p>
 </div>
-      </article>
+<!-- <p> <a href="#"> <button id="but"> Valider la selection</button></a></p> -->
 
-        
-      <article>
-
-<a href="#"> <button id="button"> Valider la selection</button></a>
-
-      </article>
-                        
-    
     </main>
+
+
 
     <!-- Laisser ce script pour avoir un joli menu-->
     <script src="../pageNavBar/navbar.js"></script>
