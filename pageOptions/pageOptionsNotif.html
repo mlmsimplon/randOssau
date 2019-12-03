@@ -9,9 +9,105 @@
 
     <title>Rand'Ossau</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="../defaultCss.css">
+    <link rel="stylesheet" href="../defautCss.css">
     <link rel="stylesheet" href="../pageNavBar/nav.css">
     <link rel="stylesheet" type="text/css" href="pageOptions.css">
+
+    <script src="pageOptions.js"></script>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            border-radius: 34px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #3D3D3D;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            border-radius: 34px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: #A8AD1E;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: rgb(143, 143, 143);
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px rgb(143, 143, 143);
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: 70vw 20vw;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            height: 30vh;
+            width: 90vw;
+        }
+
+        article div p {
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            text-align: right;
+        }
+
+        article div img {
+            border-radius: 10px;
+            border: none;
+        }
+
+        article div img:nth-of-type(1) {
+            text-align: right;
+            padding: 10px 10px;
+            width: 30px;
+            height: 30px;
+            margin-left: 30vw;
+        }
+
+        article div img:nth-of-type(2) {
+            margin-left: -20vw;
+            width: 50px;
+            height: 50px;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,13 +124,39 @@
 
     <main>
         <article>
-                <h1>Gestion Notifications</h1>
-                <a href="pageOptionsMain.html"><button>X</button></a>
+            <h1>Gestion Notifications</h1>
+            <div>
+                <p>Incidents proches</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <p>Notifications Push</p><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <p>Rappels</p><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <p>Itinéraires</p><label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <p>Vibrations</p><label></label>
+            <div>
+                <img id="bruyant" onclick="activate('bruyant', 'background', '#A8AD1E', 'true');"
+                    src="../assets/icons/volume.svg">
+                <img id="vibrate" onclick="activate('vibrate', 'background', '#A8AD1E', 'true');"
+                    src="../assets/icons/phonevibrate.png">
+            </div>
+
+            <button onclick="window.location.href = 'pageOptionsMain.html';">X</button>
         </article>
     </main>
 
     <footer>
-
     </footer>
 
     <!-- Laisser ce script pour avoir un joli menu-->
