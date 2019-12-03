@@ -14,13 +14,14 @@ article {
     height: 60vh;
     margin-left: 5vw;
     margin-top: 10vh;
+    padding-top: 1.5vh;
 }
 
 article button{
     background-color: #A8AD1E;
     position: absolute;
-    top: 58vh;
-    left: 40vw;
+    top: 85vh;
+    left: 45vw;
     border: inherit;
     padding-left: 10px;
     padding-right: 10px;
@@ -32,7 +33,7 @@ article, article ul, article ul li, main {
     display: block;
 }
 
-article ul li, article h1 {
+article h1 {
     width: 85vw;
     min-height: 7.5vh;
     max-height: 9vh;
@@ -40,7 +41,7 @@ article ul li, article h1 {
     padding-top: 10px;
     font-size: 1.8em;
     border-radius: 15px;
-    margin-top: 7.5px;
+    margin-top: 2.5vh;
     margin-left: 2.5vw;
 }
 
@@ -61,12 +62,4 @@ article img {
 
 article p img{
     margin: 0;
-}
-
-article ul li:nth-of-type(odd) {
-    background-color: #A8AD1E;
-}
-
-article ul li:nth-of-type(even) {
-    background-color: #3D3D3D;
 }

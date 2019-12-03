@@ -38,8 +38,8 @@ figure img:nth-of-type(2),
 figure img:nth-of-type(3),
 figure img:nth-of-type(4) {
     height: 7.5vh;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -1vw;
+    margin-right: -3vw;
 }
 
 /* apostrophe */
@@ -62,15 +62,16 @@ figure img:nth-of-type(9),
 figure img:nth-of-type(10),
 figure img:nth-of-type(11) {
     height: 12.5vh;
-    margin-left: -18px;
-    margin-right: -18px;
+    margin-left: -1vw;
+    margin-right: -4vw;
 }
 
 /*buttons*/
 div {
-    display: flex space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 10vw;
     margin-top: 5vh;
     overflow: hidden;
 }
@@ -90,7 +91,8 @@ div button p {
     font-family: Roboto;
     font-style: normal;
     font-weight: 550;
-    font-size: 3em;
+    font-size: 1em;
+    margin-bottom: 2vh;
     text-align: center;
     color: #A8AD1E;
 }

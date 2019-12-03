@@ -9,9 +9,49 @@
 
     <title>Rand'Ossau</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="../defaultCss.css">
-    <link rel="stylesheet" href="../pageNavBar/nav.css">
+
+    <link rel="stylesheet" type="text/css" href="../defautCss.css">
+    <link rel="stylesheet" type="text/css" href="../pageNavBar/nav.css">
     <link rel="stylesheet" type="text/css" href="pageOptions.css">
+
+    <style>
+        a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+        main article ul {
+        padding-top: 2.5vh;
+        }
+
+        main article ul li {
+            width: 85vw;
+            min-height: 7.5vh;
+            max-height: 9vh;
+            margin: 0;
+            font-size: 1.8em;
+            border-radius: 15px;
+            margin-top: 2.5vh;
+            margin-left: 2.5vw;
+            display: flex !important;
+        }
+
+        main article ul li a {
+            color: white !important;
+        }
+
+        main article ul li:nth-of-type(odd) {
+            background-color: #A8AD1E;
+        }
+
+        main article ul li:nth-of-type(even) {
+            background-color: #3D3D3D;
+        }
+
+        main article {
+            height: 70vh;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,21 +69,12 @@
     <main>
         <article>
             <ul>
-                <a href="pageOptionsContact.html">
-                    <li>Contact</li>
-                </a>
-                <a href="pageOptionsSkin.html">
-                    <li>Skin</li>
-                </a>
-                <a href="pageOptionsConditions.html">
-                    <li>Conditions Générales</li>
-                </a>
-                <a href="pageOptionsProfil.html">
-                    <li>Edition Profil</li>
-                </a>
-                <a href="pageOptionsNotif.html">
-                    <li>Gestion Notification</li>
-                </a>
+                <li><a href="pageOptionsContact.html">Contact </a></li>
+                <li><a href="pageOptionsSkin.html">Thème</a></li>
+                <li><a href="pageOptionsConditions.html">Conditions Générales</a></li>
+                <li><a href="pageOptionsProfil.html">Edition Profil</a></li>
+                <li><a href="pageOptionsNotif.html">Gestion Notification</a></li>
+                <li><a href="pageOptionsLangues.html">Langues</a></li>
             </ul>
         </article>
     </main>
