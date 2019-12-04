@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("../../assets/ossau.png");
+    background-image: url("assets/ossau.png");
     background-size: cover;
     background-position-x: 75%;
     background-blend-mode: darken;
