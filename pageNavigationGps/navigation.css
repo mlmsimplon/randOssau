@@ -57,7 +57,7 @@ a{
     
 }
 
-IMG {
+img {
     width: 2%;
 	height: 2%;
 }
@@ -67,10 +67,10 @@ h1 {
 
 footer {
     width: 100%;
-    height: 110px;
+    height: 55px;
     background-color: #3D3D3D;
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
 }
 
 nav {
