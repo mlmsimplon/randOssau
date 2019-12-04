@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    background:#3D3D3D;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    font-size : 0.8rem;
+}
+
+article{
+    width: 100%;
+    background: white;
+    margin: 0.2rem;
+    padding: 0.1rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.article-item{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    display: flex;
+}
+
+.text-black{
+    color: #3D3D3D;
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.itemsCartes{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    justify-content: space-around;
+}
+
+.itemsCartes img{
+    height: 150px;
+    max-width: 100%;
+}
+
+.download-card{
+    margin: 0;
+    background: #3D3D3D;
+    width: 90%;
+    height: 40%;
+    border-radius: 0px 13px 13px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.download-card a{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+img{
+    border: 0.2rem #3D3D3D solid;
+    border-radius: 13px;
+    object-fit: cover;
+}
+
+.flex-3{
+    flex: 3;
+}
+
+h2{
+    letter-spacing : 1px;
+    width: 100%;
+    background-color: #A8AD1E;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0;
+    border-radius: 10px;
+}
+
+/* Juste pour que ca soit propre sur présentation ordi */
+@media all and (min-width: 980px){
+    section{
+        flex-wrap: nowrap;
+    }
+} 
