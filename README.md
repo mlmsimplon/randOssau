@@ -6,9 +6,20 @@
 
     **Doc des class**
 
-    * Couleur  
+    * Couleur de texte  
 
-    .text-vert
-    .bg-vert 
-
+    .text-vert (vert Abadie)
+    .text-success
+    .text-danger
+    .text-primary
+    .text-dark
     
+    * Couleur de fond
+    .bg-vert 
+    .bg-dark
+
+    * Border radius
+    .br 
+
+    * Police / font family (si besoin)
+    .ff
