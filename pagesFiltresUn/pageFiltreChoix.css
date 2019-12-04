@@ -12,7 +12,9 @@
 h1 {
     color: white;
 }
-
+h3 {
+    font-weight: lighter;
+}
 
         body {
             text-align: center;
@@ -138,4 +140,52 @@ datalist {
 
 .flexible p{
     flex: 1;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+  position : absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 37px;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3D3D3D;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    border-radius: 30px;
+    width: 26px;
+    margin-top: 4px;
+    margin-right: 2px;
+    background-color: #A8AD1E;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+#recherche{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #A8AD1E;
+    border-radius: 5px;
 }
