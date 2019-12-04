@@ -65,8 +65,9 @@ article{
     flex-direction: column;
 }
 
-.download-card span{
+.download-card a{
     font-size: 1.5rem;
+    color: #fff;
 }
 
 img{
