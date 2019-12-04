@@ -1,12 +1,18 @@
-body main{
+body, main{
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
 }
-section{
-    height: 100%;
+main section:first-child {
+    height: 50%;
     width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -14,21 +20,45 @@ section{
 }
 article{
     background-color: white;
-    height: 10vh;
+    height: 8vh;
     width: 80vw;
     border-radius: 1vh;
     color: #3d3d3d;
-    padding-left: 3vw;
+    /* padding-left: 3vw; */
     display: flex;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
 }
 h2{
     width: 240px;
+    padding-left: 3vw;
 }
-img{
+.close{
     height: 20px;
     width: 20px;
     margin-left: 3vw;
     margin-right: 3vw;
+}
+
+.circuit{
+    background-color: white;
+    height: 50vh;
+    width: 80vw;
+    margin-bottom: 2vh;
+}
+h3{
+    margin-left: 2vw;
+}
+div.nom_rando{
+    background-color: #a8ad1e;
+    width: 78vw;
+    border-radius: 1vh;
+}
+img.cretes{
+    height: 20vh;
+    width: auto;
+}
+div.type_rando{
+    display: flex;
 }
