@@ -2,6 +2,10 @@ body {
     text-align: center;
 }
 
+nav ul li{
+    color: #A8AD1E !important;
+}
+
 a{
     text-decoration: inherit;
     color: inherit;

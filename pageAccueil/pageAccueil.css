@@ -14,13 +14,13 @@ body {
 }
 
 /* logo haut gauche */
-header img:nth-of-type(1) {
+header img {
     width: 40vw;
     float: left;
 }
 
 /* parametres */
-header img:nth-of-type(2) {
+header a img {
     width: 10vw;
     float: right;
     margin: 5vw 5vw;
