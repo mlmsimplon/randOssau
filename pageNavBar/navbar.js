@@ -27,4 +27,4 @@ class Link{
 const nav = document.querySelector("nav > ul")
 
 // création de la navbar, a modifié dans un futur proche avec des icones
-const navBar = new Link(["home.html", "carte.html", "nav.html"], ["fa-home", "fa-map", "fa-map-marker-alt"], nav)
+const navBar = new Link(["../pageAccueil/pageAccueil.html", "../pageCartes/pageCartes.html", "../pageNavigationGps/navigationGps.html"], ["fa-home", "fa-map", "fa-map-marker-alt"], nav)
