@@ -97,14 +97,24 @@ aside span{
 
 .détailRando{
     display: flex;
-    justify-content: flex-end;
+    ;
     align-items: flex-start;
+    
     
 
 }
+
+.difficulté{
+
+    color: #77B517
+    
+
+}
+
 
 .box{
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
+    
 }
