@@ -98,6 +98,7 @@ aside span{
 .détailRando{
     display: flex;
     ;
+    flex-direction: row;
     align-items: flex-start;
     
     
@@ -106,8 +107,7 @@ aside span{
 
 .difficulté{
 
-    color: #77B517
-    
+    color: #77B517;  
 
 }
 
@@ -117,4 +117,18 @@ aside span{
     align-items: flex-end;
     justify-content: space-around;
     
+}
+
+.difficultéLesBuis{
+color: blue;
+
+}
+
+.difficultéLesCrêtes{
+    color: red;
+}
+
+.depart{
+    display: flex;
+    flex-direction: row;
 }
