@@ -10,6 +10,10 @@ html, body{
     width: 100%;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .button{
     background-color: #A8AD1E;
     border-radius: 13px;
@@ -24,6 +28,31 @@ a{
     color: #A8AD1E
 }
 
+.text-success{
+    color: #77B517;
+}
+.text-danger{
+    color: red;
+}
+.text-primary{
+    color: #226DFE;
+}
+.text-dark{
+    color: #3D3D3D;
+    font-weight: bold;
+}
 .bg-vert{
-    color: #A8AD1E;
+    background-color: #A8AD1E;
+}
+.bg-dark{
+    background-color: #3D3D3D;
+}
+
+.br{
+    border-radius: 13px;
+}
+
+.ff{
+    font-family: 'Open Sans', sans-serif;
+    
 }
