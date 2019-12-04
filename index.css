@@ -4,10 +4,9 @@
 }
 
 body {
-    background-image: url("assets/ossau.png");
+    background-image: url("assets/ossau.png") !important;
     background-size: cover;
     background-position-x: 75%;
-    background-blend-mode: darken;
     height: 100vh;
     overflow: hidden;
     text-align: center;
@@ -78,8 +77,7 @@ div {
 
 div button {
     overflow: hidden;
-    background: #3D3D3D;
-    border: 5px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
     border-radius: 25px;
     width: 30vw;
     height: 30vw;
@@ -94,7 +92,6 @@ div button p {
     font-size: 1em;
     margin-bottom: 2vh;
     text-align: center;
-    color: #A8AD1E;
 }
 
 div button img {

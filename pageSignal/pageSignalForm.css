@@ -16,7 +16,6 @@ body {
     display: flex;
     width: 100vw;
     justify-content: center;
-    background-color: #3D3D3D;
     margin: 0;
     font-family: Open Sans;
     color: white;
@@ -24,8 +23,7 @@ body {
     overflow-y: scroll;
 }
 
-input,
-textarea {
+input, textarea {
     background-color: #C4C4C4;
     border: inherit;
     padding: 20px;
@@ -42,7 +40,6 @@ button {
     width: 60vw;
     border-radius: 15px;
     color: white;
-    background-color: #A8AD1E;
     border: 2px solid white;
 }
 
@@ -50,10 +47,7 @@ textarea {
     height: 20vh;
 }
 
-h1,
-input,
-textarea,
-button {
+h1, input, textarea, button {
     font-size: 1.5em;
 }
 

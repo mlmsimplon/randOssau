@@ -4,11 +4,10 @@
 
 body {
     text-align: center;
-    background-color: #3D3D3D;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: inherit;
     color: inherit;
 }
@@ -18,7 +17,6 @@ button {
 }
 
 header {
-    background: #A8AD1E;
     height: auto;
     color: white;
     font-family: Open Sans;
@@ -70,8 +68,7 @@ div div p {
     font-size: 1rem;
 }
 
-.green {
-    background: #A8AD1E;
+body>div>button {
     border-radius: 20px;
     width: 70vw;
     color: white;
@@ -83,11 +80,11 @@ div div p {
     height: 10vw;
 }
 
-.green:nth-of-type(1) {
+body>div>button:nth-of-type(1) {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.green:nth-of-type(2) {
+body>div>button:nth-of-type(2) {
     margin-bottom: 20px;
 }
