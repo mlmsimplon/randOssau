@@ -5,9 +5,8 @@ export class routeList {
     }
 
     push(listItem) {
-        // console.log(listItem);
         this.list.push(listItem);
-        // console.log(this.list.length);
+        // this.check();
     }
 
     getLength() {
@@ -17,6 +16,35 @@ export class routeList {
     check() {
         console.log("checking array.......");
         console.log(this.getLength());
+    }
+
+    search(category, str) {
+        let results = [];
+        let functionSpec;
+        console.log("category: " + category + ", text: " + str);
+
+        switch (category) {
+            case ("nom"): functionSpec = "getNom()"; break;
+            case ("pointdepart"): functionSpec = "getPointDepart()"; break;
+            case ("niveau"): functionSpec = "getNiveau()"; break;
+            case ("pdf"): functionSpec = "getPdf()"; break;
+            case ("gpx"): functionSpec = "getGpx()"; break;
+            case ("duree"): functionSpec = "getDuree()"; break;
+            case ("distance"): functionSpec = "getDistance()"; break;
+            case ("elevation"): functionSpec = "getElevation()"; break;
+            default: return "error in name";
+        }
+
+        console.log("function: " + functionSpec);
+
+        for (let i = 0; i < this.list.length; i++) {
+            console.log(i + " - " + "searching: " + functionSpec.apply);
+            if (this.list[i].functionSpec == str) {
+                console.log("result found");
+                results.push(this.list[i]);
+            }
+        }
+        return results;
     }
 
 }
