@@ -14,9 +14,6 @@
     <link rel="stylesheet" type="text/css" href="pageOptions.css">
 
     <style>
-        article h1 {
-            background-color: #3d3d3d;
-        }
 
         article h2,
         article p,
@@ -59,12 +56,6 @@
             height: 6vw;
         }
 
-        article div div,
-        article input,
-        article textarea {
-            background-color: #3D3D3D;
-        }
-
         .grid {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -99,17 +90,17 @@
 
     <main>
         <article>
-            <h1>Edition Profil</h1>
+            <h1 class="bg-vert">Edition Profil</h1>
             <div class="grid">
                 <h2>Avatar :</h2>
-                <div><img src="../assets/icons/camera.svg"></div>
+                <div class="bg-dark"><img src="../assets/icons/camera.svg"></div>
                 <h2>Nom : </h2>
-                <input placeholder="Emma Bezet"></input>
+                <input  class="bg-dark"placeholder="Emma Bezet"></input>
                 <h2>Email :</h2>
-                <input placeholder="EmmaBezet64@gmail.com"></input>
+                <input class="bg-dark" placeholder="EmmaBezet64@gmail.com"></input>
                 <h2>Adresse :</h2>
-                <textarea></textarea>
-                <a href="pageOptionsMain.html"><button>X</button></a>
+                <textarea class="bg-dark"></textarea>
+                <a href="pageOptionsMain.html"><button class="bg-vert">X</button></a>
             </div>
         </article>
     </main>
