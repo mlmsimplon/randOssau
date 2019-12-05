@@ -10,32 +10,7 @@ export class route {
         this.elevation = elevation;
     }
 
-    getNom() {
-        return this.nom;
+    getProp(prop) {
+        return this[prop];
     }
-
-    getPointDepart() {
-        return this.pointdepart;
-    }
-
-    getNiveau() {
-        return this.niveau;
-    }
-
-    getPdf() {
-        return this.pdf;
-    }
-
-    getDuree() {
-        return this.duree;
-    }
-
-    getDistance() {
-        return this.distance;
-    }
-
-    getElevation() {
-        return this.elevation;
-    }
-
 }

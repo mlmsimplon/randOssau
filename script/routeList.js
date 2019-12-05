@@ -20,31 +20,27 @@ export class routeList {
 
     search(category, str) {
         let results = [];
-        let functionSpec;
-        console.log("category: " + category + ", text: " + str);
-
-        switch (category) {
-            case ("nom"): functionSpec = "getNom()"; break;
-            case ("pointdepart"): functionSpec = "getPointDepart()"; break;
-            case ("niveau"): functionSpec = "getNiveau()"; break;
-            case ("pdf"): functionSpec = "getPdf()"; break;
-            case ("gpx"): functionSpec = "getGpx()"; break;
-            case ("duree"): functionSpec = "getDuree()"; break;
-            case ("distance"): functionSpec = "getDistance()"; break;
-            case ("elevation"): functionSpec = "getElevation()"; break;
-            default: return "error in name";
-        }
-
-        console.log("function: " + functionSpec);
+        console.log("search commencing || category: " + category + ", text: " + str);
 
         for (let i = 0; i < this.list.length; i++) {
-            console.log(i + " - " + "searching: " + functionSpec.apply);
-            if (this.list[i].functionSpec == str) {
-                console.log("result found");
+            // console.log(this.list[i].getProp(category));
+            if(category == "nom"){ //for nom partial match is acceptable
+                if(this.matches(str, this.list[i].getProp(category))){
+                    console.log("route confirmed");
+                    results.push(this.list[i]);
+                }
+            }
+            else if (this.list[i].getProp(category) == str) {
+                //for all else exact match is required
+                // console.log("result found");
                 results.push(this.list[i]);
             }
         }
         return results;
+    }
+
+    matches(full, partial){
+        return partial.toLowerCase().indexOf(full.toLowerCase()) > -1;
     }
 
 }

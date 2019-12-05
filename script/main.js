@@ -8,9 +8,11 @@ initializeArray();
 //ensure this happens after the array has been loaded
 $.when($.getJSON("../assets/circuits.json")).done(function () {
 
-    console.log(routeList1.getLength());
+    console.log("number of routes: " + routeList1.getLength());
     console.log("routes : " + routeList1.list);
-    routeList1.search('nom', 'Patrimoine');
+
+    var results = routeList1.search('nom', 'trois');
+    console.log("first result of search: " + results[0].getProp('nom'));
 
 });
 
