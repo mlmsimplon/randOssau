@@ -194,8 +194,8 @@ input[type=range].put {
 }
 
 
-.croix {
 
-    justify-content: center;
-    align-self: flex-end;
+.croix {
+    color: white;
+    margin-left: 3vw;
 }
