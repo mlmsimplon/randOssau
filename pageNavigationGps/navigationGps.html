@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,34 +33,33 @@
     <main>
 
         <div id='map'></div>
-        
-          <footer class="bg-dark">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="" class="fas fa-book-reader"></a>
-                        </li>
-                        <li>
-                            <a href="" class="fas fa-star"></a>
-                        </li>
-                        <li>
-                            <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
-                        </li>
-                    </ul>
-                 </nav>
-            </footer>
+
+        <footer class="bg-dark">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" class="fas fa-book-reader"></a>
+                    </li>
+                    <li>
+                        <a href="" class="fas fa-star"></a>
+                    </li>
+                    <li>
+                        <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
 
     </main>
 
-<<<<<<< HEAD
     <article>
-         <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
-            <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
-            <div id='map' style='width: 400px; height: 300px;'></div>
-            <script>
-                mapboxgl.accessToken = 'pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ';
-              var map = new mapboxgl.Map({container: 'map', style: 'mapbox://styles/mapbox/streets-v11'});
-         </script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ';
+            var map = new mapboxgl.Map({ container: 'map', style: 'mapbox://styles/mapbox/streets-v11' });
+        </script>
     </article>
 
     <footer>
@@ -75,28 +75,27 @@
                     <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
                 </li>
             </ul>
-         </nav>
+        </nav>
     </footer>
-              <script>
-              mapboxgl.accessToken = 'pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ';
-                 var map = new mapboxgl.Map({
-                 container: 'map',
-                 style: 'mapbox://styles/mapbox/streets-v11',
-                 center: {lat:43.3193942, Ing:-0.3655022];
-                 zoom: 16,
-                 localIdeographFontFamily: "'Noto Sans', 'Noto Sans CJK SC', sans-serif" });
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: { lat: 43.3193942, Ing: -0.3655022];
+            zoom: 16,
+            localIdeographFontFamily: "'Noto Sans', 'Noto Sans CJK SC', sans-serif"
+        });
 
-                 map.addControl(new mapboxgl.GeolocateControl({
-                positionOptions: {
+        map.addControl(new mapboxgl.GeolocateControl({
+            positionOptions: {
                 enableHighAccuracy: true
-                    },
-                trackUserLocation: true
-                    }));
-              </script>
-=======
-    <script src="navigationGps.js"></script>
->>>>>>> de94a0b323b3160137bf39c21d7b581c4ddd61f1
+            },
+            trackUserLocation: true
+        }));
+    </script>
     <script src="../pageNavBar/navbar.js"></script>
 
 </body>
+
 </html>
