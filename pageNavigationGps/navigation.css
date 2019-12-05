@@ -1,100 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-html, body{
-    background-color: #3D3D3D;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-.button{    height: max-content;
-    background-color: #A8AD1E;
-    border-radius: 13px;
-}
-
-a{
-    color: #A8AD1E;
-    text-decoration: none;
-}
-
-.text-vert{
-    color: #A8AD1E
-}
-
-.text-success{
-    color: #77B517;
-}
-.text-danger{
-    color: red;
-}
-.text-primary{
-    color: #226DFE;
-}
-.text-dark{
-    color: #3D3D3D;
-    font-weight: bold;
-}
-.bg-vert{
-    background-color: #A8AD1E;
-}
-.bg-dark{
-    background-color: #3D3D3D;
-}
-
-.br{
-    border-radius: 13px;
-}
-
-.ff{
-    font-family: 'Open Sans', sans-serif;
-    
-}
-
-img {
-    width: 2%;
-	height: 2%;
-}
-h1 {
-    text-align: center;
-}
-
 footer {
     width: 100%;
     height: 55px;
-    background-color: #3D3D3D;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0;
 }
 
-nav {
-    width: 100%;
-    height: 55px;
+#map { 
+    position: absolute;
+    top: 110px; 
+    bottom: 110px; 
+    width: 100%;  
+    height: 100%;
 }
 
-li > a {
-    width: 100%;
-    text-align :center;
-}
-ul {
+footer ul{
     display: flex;
     width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-li{
-    list-style-type: none;
-    font-size: 2rem;
-    width: 100%;
-}
-
-fa-exclamation-triangle {
-    color:red;
+    height: 55px;
+    align-items: center;
 }
