@@ -15,7 +15,8 @@ export class routeList {
 
     check() {
         console.log("checking array.......");
-        console.log(this.getLength());
+        console.log(this.getLength())
+        console.log("first element: " + this.list[0]);
     }
 
     search(category, str) {

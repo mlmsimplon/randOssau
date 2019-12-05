@@ -5,9 +5,10 @@ var routeList1 = new routeList([]);
 
 initializeArray();
 
-//ensure this happens after the array has been loaded
+
 $.when($.getJSON("../assets/circuits.json")).done(function () {
 
+    //après tableau est chargé
     console.log("number of routes: " + routeList1.getLength());
     console.log("routes : " + routeList1.list);
 
