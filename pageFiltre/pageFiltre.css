@@ -43,7 +43,7 @@ section  {
 
 article img {
     margin-left : 0rem;
-    height: 25vh;
+    height: 30vh;
     width: 35vw;
     border-radius: 10px;
     align-self: flex-start;
@@ -81,7 +81,6 @@ aside .box1{
     border-radius: 10px;
     justify-content: center;
     align-items: center;   
-    background-color: #A8AD1E;
 }
     
 
@@ -114,7 +113,7 @@ aside span{
 .box{
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    align-items: space-around;
     
 }
 
@@ -129,5 +128,10 @@ color: blue;
 
 .depart{
     display: flex;
-    flex-direction: row;
+    
+}
+
+i fas fa-crosshairs{
+    margin-top: ;
+  
 }
