@@ -51,7 +51,6 @@ img {
 h2 {
     letter-spacing : 1px;
     width: 100%;
-    background-color: #A8AD1E;
     font-weight: lighter;
     font-size: 1.5rem;
     text-align: center;
@@ -60,7 +59,7 @@ h2 {
     border-radius: 13px;
 }
 
-article:img{
+article img{
     
  
         height: 10vh;

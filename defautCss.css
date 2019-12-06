@@ -39,13 +39,15 @@ a{
 }
 .text-dark{
     color: #3D3D3D;
-    font-weight: bold;
 }
 .bg-vert{
     background-color: #A8AD1E;
 }
 .bg-dark{
     background-color: #3D3D3D;
+}
+.bg-orange{
+    background-color: #FF7A00;
 }
 
 .br{

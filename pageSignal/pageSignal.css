@@ -4,37 +4,46 @@
 
 body {
     text-align: center;
-    background-color: #3D3D3D;
     margin: 0;
-}
-
-a{
-    text-decoration: inherit;
-    color: inherit;
 }
 
 button {
     border: inherit;
 }
 
-header {
-    background: #A8AD1E;
-    height: auto;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110px;    
     color: white;
-    font-family: Open Sans;
-    font-size: 2.5rem;
-    letter-spacing: 0.1em;
-    text-align: left;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-left: 40px;
-    padding-bottom: 20px;
+    font-weight: lighter;
+    font-size: 1.5rem;
+} 
+
+a{
+    color :white;
+    font-size: 2rem;
 }
 
-header img {
-    float: right;
-    height: 7.5vh;
-    margin: 20px;
+.header-item{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
+
+.flex-end{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .wrap {
     /* display: grid;
@@ -48,7 +57,6 @@ header img {
 }
 
 div div button {
-    background: #FF7A00;
     border-radius: 100px;
     color: white;
     width: 20vw;
@@ -70,8 +78,7 @@ div div p {
     font-size: 1rem;
 }
 
-.green {
-    background: #A8AD1E;
+body>div>button {
     border-radius: 20px;
     width: 70vw;
     color: white;
@@ -83,11 +90,11 @@ div div p {
     height: 10vw;
 }
 
-.green:nth-of-type(1) {
+body>div>button:nth-of-type(1) {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.green:nth-of-type(2) {
+body>div>button:nth-of-type(2) {
     margin-bottom: 20px;
 }
