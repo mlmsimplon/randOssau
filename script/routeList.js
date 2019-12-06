@@ -25,8 +25,8 @@ export class routeList {
 
         for (let i = 0; i < this.list.length; i++) {
             // console.log(this.list[i].getProp(category));
-            if(category == "nom"){ //for nom partial match is acceptable
-                if(this.matches(str, this.list[i].getProp(category))){
+            if (category == "nom") { //for nom partial match is acceptable
+                if (this.matches(str, this.list[i].getProp(category))) {
                     console.log("route confirmed");
                     results.push(this.list[i]);
                 }
@@ -40,8 +40,43 @@ export class routeList {
         return results;
     }
 
-    matches(full, partial){
+    matches(full, partial) {
         return partial.toLowerCase().indexOf(full.toLowerCase()) > -1;
+    }
+
+    flitre(query) {
+        let results = [];
+        this.list.filter(function (el) {
+            if (this.matches(el.nom, query.nom)) {
+                results.push(el);
+            }
+            else if (this.matches(el.pointdepart, query.pointdepart)) {
+                results.push(el);
+            }
+            else if (el.niveau == query.niveau) {
+                results.push(el);
+            }
+            else if (el.duree <= query.duree) {
+                results.push(el);
+            }
+            else if (el.distance <= query.distance) {
+                results.push(el);
+            }
+            else if (el.elevation <= query.elevation) {
+                results.push(el);
+            }
+        });
+        return results;
+    }
+
+    printFiltre(selection) {
+        for (let i = 0; i < this.getLength; i++) {
+            for (let j = 0; j < selection.length; j++) {
+                if (this.list[i] == selection[j]) {
+                    console.log(this.list[i]);
+                }
+            }
+        }
     }
 
 }
