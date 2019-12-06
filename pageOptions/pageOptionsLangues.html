@@ -16,10 +16,6 @@
     <script src="pageOptions.js"></script>
 
     <style>
-        article h1 {
-            background: #3D3D3D;
-        }
-
         article ul {
             margin-top: 5vh;
             display: inline-grid;
@@ -42,10 +38,6 @@
             font-size: 1.5em;
             border-radius: 15px;
         }
-
-        article ul li:active {
-            background-color: #A8AD1E;
-        }
     </style>
 </head>
 
@@ -63,13 +55,13 @@
 
     <main>
         <article>
-            <h1>Langues</h1>
+            <h1 class="bg-vert">Langues</h1>
             <ul>
                 <li id="fr" onclick="activate('fr','background','#A8AD1E', 'true');">Français</li>
                 <li id="en" onclick="activate('en','background','#A8AD1E', 'true');">English</li>
                 <li id="es" onclick="activate('es','background','#A8AD1E', 'true');">Español</li>
             </ul>
-            <a href="pageOptionsMain.html"><button>X</button></a>
+            <a href="pageOptionsMain.html"><button class="bg-vert">X</button></a>
         </article>
     </main>
 

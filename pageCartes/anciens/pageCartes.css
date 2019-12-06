@@ -9,6 +9,7 @@ main{
 
 section{
     display: flex;
+    background:#3D3D3D;
     width: 100%;
     flex-wrap: wrap;
     margin-top: 1rem;

@@ -15,10 +15,8 @@ section{
 article{
     background-color: white;
     height: 10vh;
-    width: 80vw;
-    border-radius: 1vh;
-    color: #3d3d3d;
-    padding-left: 3vw;
+    width: 90vw;
+    border-radius: 13px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,8 +25,8 @@ h2{
     width: 240px;
 }
 img{
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     margin-left: 3vw;
     margin-right: 3vw;
 }

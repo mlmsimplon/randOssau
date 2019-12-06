@@ -17,10 +17,6 @@
     <script src="pageOptions.js"></script>
 
     <style>
-        article h1 {
-            background: #3D3D3D;
-        }
-
         article span {
             color: black;
         }
@@ -78,16 +74,12 @@
             background-color: #7E7E7E !important;
         }
 
-        .noir {
-            background: #3D3D3D;
-        }
-
         /* ul:active {
             -webkit-box-shadow: inset 0px 0px 0px 3px #A8AD1E;
             -moz-box-shadow: inset 0px 0px 0px 3px #A8AD1E;
             box-shadow: inset 0px 0px 0px 3px #A8AD1E;
         } */
-        .noir li {
+        .bg-dark li {
             background-color: #575555 !important;
         }
 
@@ -110,7 +102,7 @@
 
     <main>
         <article>
-            <h1>Thème</h1>
+            <h1 class="bg-dark">Thème</h1>
             <div>
                 <div>
                     <ul class="gris" id="clair" onclick="activate('clair', 'border', '#A8AD1E', 'true');">
@@ -121,7 +113,7 @@
                     <p>Mode Clair</p>
                 </div>
                 <div>
-                    <ul class="noir" id="sombre" onclick="activate('sombre', 'border', '#A8AD1E', 'true');">
+                    <ul class="bg-dark" id="sombre" onclick="activate('sombre', 'border', '#A8AD1E', 'true');">
                         <li></li>
                         <li></li>
                         <li></li>
@@ -129,7 +121,7 @@
                     <p>Mode Sombre</p>
                 </div>
             </div>
-            <a href="pageOptionsMain.html"><button>X</button></a>
+            <a href="pageOptionsMain.html"><button class="bg-vert">X</button></a>
         </article>
     </main>
 

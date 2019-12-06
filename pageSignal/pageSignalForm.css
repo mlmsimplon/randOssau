@@ -4,35 +4,30 @@ section {
     text-align: center;
 }
 
-.back {
+/* .back {
     margin-left: -15vw;
     margin-top: 20px;
     position: absolute;
     height: 30px;
     transform: rotate(180deg);
-}
+} */
 
 body {
     display: flex;
     width: 100vw;
     justify-content: center;
-    background-color: #3D3D3D;
     margin: 0;
-    font-family: Open Sans;
     color: white;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-input,
-textarea {
+input, textarea {
     background-color: #C4C4C4;
     border: inherit;
-    padding: 20px;
+    padding: 10px;
     margin-left: -10px;
-    border-radius: 15px;
     width: 75vw;
-    margin-bottom: 1.5vh;
 }
 
 button {
@@ -40,9 +35,7 @@ button {
     margin-bottom: 25px;
     padding: 10px;
     width: 60vw;
-    border-radius: 15px;
     color: white;
-    background-color: #A8AD1E;
     border: 2px solid white;
 }
 
@@ -50,11 +43,12 @@ textarea {
     height: 20vh;
 }
 
-h1,
-input,
-textarea,
-button {
-    font-size: 1.5em;
+h1, input, textarea, button {
+    font-size: 1rem;
+}
+
+::placeholder{
+    font-size: 0.8rem;
 }
 
 h1 {
@@ -67,7 +61,7 @@ h1 {
 span {
     font-style: oblique;
     letter-spacing: 0.1em;
-    font-size: 0.5em;
+    font-size: 0.5rem;
 }
 
 p {
@@ -84,4 +78,21 @@ div img {
 
 .right {
     float: right;
+}
+
+section a{
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.flex{
+    display: flex;
+
+}
+
+.flex span{
+    flex: 1;
 }
