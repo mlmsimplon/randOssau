@@ -10,8 +10,19 @@
     <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="../pageNavBar/nav.css">
 
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <!-- Code pour faire fonctionner Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <!-- Script pour intégré les données GPX dans Leaflet -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script>
+
 </head>
 
 <body>
@@ -31,28 +42,58 @@
 
     <main>
 
-        <div id='map'></div>
-        
-          <footer class="bg-dark">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="" class="fas fa-book-reader"></a>
-                        </li>
-                        <li>
-                            <a href="" class="fas fa-star"></a>
-                        </li>
-                        <li>
-                            <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
-                        </li>
-                    </ul>
-                    
-                 </nav>
-            </footer>
+        <!-- Id pour que Leaflet intégre la map, nécessite également une taille (CSS)-->
+        <div id="mapid">
+          
+
+            <!-- Un bouton, avec un positionnement a la leaflet-->
+            <div class="leaflet-right leaflet-top fas fa-location-arrow" id="gps"></div>
+        </div>
+  
+       
+        <footer class="bg-dark">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" class="fas fa-book-reader"></a>
+                    </li>
+                    <li>
+                        <a href="" class="fas fa-star"></a>
+                    </li>
+                    <li>
+                        <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
+                    </li>
+                </ul>
+                
+             </nav>
+        </footer>
 
     </main>
 
-    <script src="navigationGps.js"></script>
+
+    <script>
+        
+        // Il faut initialisé la map, le set view pointe Londre, [attitude, longitude], zoom
+        let myMap = L.map("mapid").setView([43.30, -0.366667], 13)
+
+        // On ajoute maintenant la carte, (token fourni par mapbox), et on lui fourni quelques propriétés
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ', {
+            attribution: "Carte de test",
+            maxZoom: 20,
+            id: 'mapbox/streets-v11' // mapbox/satelite-v9 pour la vue satellite
+        }).addTo(myMap)
+
+        // Fonctionne avec le plugin pour ajouté un fichier gpx pour l'afficher sur la carte
+        // https://github.com/mpetazzoni/leaflet-gpx pour la doc
+        let gpx = "Fichier_GPX_Patrimoine_Lys-1.gpx"
+        new L.GPX(gpx, {async: true}).on('loaded', function(e){
+            myMap.fitBounds(e.target.getBounds())
+            console.log(e.target.get_distance()/1000    ) // function retournant la distance total .. 
+        }).addTo(myMap)
+
+    </script>
+
+
     <script src="../pageNavBar/navbar.js"></script>
 
 </body>

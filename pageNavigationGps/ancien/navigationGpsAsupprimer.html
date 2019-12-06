@@ -7,7 +7,7 @@
     <title>Navigation GPS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="../defautCss.css">
-    <link rel="stylesheet" href="navigationSupp.css">
+    <link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="../pageNavBar/nav.css">
 
     <!-- Code pour faire fonctionner Leaflet-->
@@ -88,7 +88,7 @@
         let gpx = "Fichier_GPX_Patrimoine_Lys-1.gpx"
         new L.GPX(gpx, {async: true}).on('loaded', function(e){
             myMap.fitBounds(e.target.getBounds())
-            console.log(e.target.get_distance_imp()) // function retournant la distance total .. 
+            console.log(e.target.get_distance()/1000    ) // function retournant la distance total .. 
         }).addTo(myMap)
 
     </script>
