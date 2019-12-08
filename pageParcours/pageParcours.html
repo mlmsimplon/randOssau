@@ -44,13 +44,7 @@
 
         <!-- Id pour que Leaflet intégre la map, nécessite également une taille (CSS)-->
         <div id="mapid">
-          
-
-            <!-- Un bouton, avec un positionnement a la leaflet-->
-            <div class="leaflet-right leaflet-top fas fa-location-arrow" id="gps"></div>
-        </div>
   
-       
         <footer class="bg-dark">
             <nav>
                 <ul>
@@ -73,8 +67,26 @@
 
     <script>
         
+        map.locate({setView: true, maxZoom: 16});
+        function onLocationFound(e) {
+        var radius = e.accuracy;
+
+        L.marker(e.latlng).addTo(map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+        L.circle(e.latlng, radius).addTo(map);
+        }
+
+        map.on('locationfound', onLocationFound);
+
+        function onLocationError(e) {
+        alert(e.message);
+        }
+
+        map.on('locationerror', onLocationError);
+        
         // Il faut initialisé la map, le set view pointe Londre, [attitude, longitude], zoom
-        let myMap = L.map("mapid").setView([43.30, -0.366667], 13)
+        let myMap = L.map("mapid").setView([43.30, -0.366667], 15)
 
         // On ajoute maintenant la carte, (token fourni par mapbox), et on lui fourni quelques propriétés
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ', {
@@ -92,8 +104,6 @@
         }).addTo(myMap)
 
     </script>
-
-
     <script src="../pageNavBar/navbar.js"></script>
 
 </body>
