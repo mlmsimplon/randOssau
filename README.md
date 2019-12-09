@@ -7,7 +7,6 @@
     **Doc des class**
 
     * Couleur de texte  
-
     .text-vert (vert Abadie)
     .text-success
     .text-danger
@@ -17,9 +16,14 @@
     * Couleur de fond
     .bg-vert 
     .bg-dark
+    .bg-orange
 
+    **Divers**
     * Border radius
     .br 
 
     * Police / font family (si besoin)
     .ff
+
+    * Buttons
+    .button
