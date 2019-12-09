@@ -52,7 +52,7 @@ export class routeList {
                 ((query.distance == "*") || (el.distance <= query.distance)) &&
                 ((query.elevation == "*") || (el.elevation <= query.elevation))) {
                 // console.log("result found: " + el);
-                    results.push(el);
+                results.push(el);
             }
         });
         console.log("recherche fini. nombre des resultats : " + results.length);
@@ -69,6 +69,10 @@ export class routeList {
                 }
             }
         }
+    }
+
+    print() {
+
     }
 
 }

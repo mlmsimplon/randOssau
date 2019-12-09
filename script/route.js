@@ -15,4 +15,8 @@ export class route {
     getProp(prop) {
         return this[prop];
     }
+
+    print(){
+        
+    }
 }

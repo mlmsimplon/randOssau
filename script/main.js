@@ -41,6 +41,7 @@ function initializeArray() {
             let elevation = data[i].elevation;
 
             let thisRoute = new route(nom, pointdepart, niveau, pdf, gpx, duree, distance, elevation);
+
             routeList1.push(thisRoute);
         }
     });
