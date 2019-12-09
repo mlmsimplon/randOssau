@@ -139,9 +139,27 @@
 
             </div>
             <div>
-                <p> <a href="#" onclick='window.location="../pageFiltre2/page_filtre_2.html" '> <button class="bg-dark" id="but"> Valider</button></a></p>
+                <p> <a href="#"> <button class="bg-dark" id="but"> Valider</button></a></p>
+                <!--window.location="../pageFiltre2/page_filtre_2.html" -->
             </div>
         </article>
+
+        <script>
+
+            // Filtrer la recherche pour de vrai ?? 
+            let x = document.getElementById("but")
+
+            x.addEventListener("click", function(e){
+                e.preventDefault()
+                console.log(document.getElementById("range3").value)
+
+                window.location = "../pageFiltre2/page_filtre_2.html?difficulte="+ document.getElementById("range3").value;
+                // test d'un renvoie de donnée avec un param dans l'url
+
+            })
+
+        </script>
+
 
         <!-- <main>
 <section>
