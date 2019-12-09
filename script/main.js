@@ -1,4 +1,4 @@
-import { route } from "./route.js";
+çimport { route } from "./route.js";
 import { routeList } from "./routeList.js";
 
 var routeList1 = new routeList([]);
@@ -13,9 +13,9 @@ $.when($.getJSON("../assets/circuits.json")).done(function () {
     // search test
     // var results = routeList1.search('nom', 'trois');
     // console.log("first result of search: " + results[0].getProp('nom'));
-    var query = new route("circle", "*", "1", "*", "*", "*", "*", "*");
+    var query = new route("circ", "*", "1", "*", "*", "*", "*", "*");
     var results = routeList1.flitre(query);
-    routeList1.printFiltre(results);
+    routeList1.printFiltre(results, routeList1);
 
 });
 

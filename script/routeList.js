@@ -15,7 +15,7 @@ export class routeList {
 
     check() {
         console.log("checking array.......");
-        console.log(this.getLength())
+        console.log("length: " + this.getLength())
         console.log("first element: " + this.list[0]);
     }
 
@@ -45,8 +45,11 @@ export class routeList {
     }
 
     flitre(query) {
+        console.log(query);
+
         let results = [];
         this.list.filter(function (el) {
+            console.log(el.nom);
             if (this.matches(el.nom, query.nom)) {
                 results.push(el);
             }
