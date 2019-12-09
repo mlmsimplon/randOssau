@@ -114,12 +114,21 @@ h3 {
 datalist {
     display: flex;
     justify-content: space-between;
+   
 }
 input[type=range].put {
+    height: 8px;
     width: 80vw;
     background: #A8AD1E;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+  
 }
-
+input[type=range]::-ms-track {
+background: transparent;
+border-color: transparent;
+color: transparent;
+}
 
 .slider{
     content: "";
@@ -188,7 +197,7 @@ input[type=range].put {
 #recherche{
     width: 200px;
     height: 40px;
-    border: 1px solid #A8AD1E;
+    border: 1px solid darkgray;
     border-radius: 5px;
 }
 
@@ -197,4 +206,8 @@ input[type=range].put {
 .croix {
     color: white;
     margin-left: 3vw;
+}
+
+#dif {
+
 }

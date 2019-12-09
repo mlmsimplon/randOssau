@@ -71,7 +71,7 @@
         <article class="article-flex">
 
             <div class="item-flex">
-                <h3>Rechercher par nom </h3> <br>
+                <h3>Rechercher par nom : </h3> <br>
                 <input type="search" name="choice" id="recherche" placeholder="Les crêtes d'An...">
                 </p>
 
@@ -95,7 +95,7 @@
                     <option value="3" class="text-danger" label="Sportif">
                     <option value="4" label="Extrême">
                 </datalist>
-                <input class="put" min=1 max=4 type="range" name="range" list="dif" id="range3">
+                <input class="put" min=1 max=4 type="range" name="range" list="dif" id="range1">
 
             </div>
 
@@ -109,13 +109,13 @@
 
             </div>
             <div class="item-flex">
-                <datalist id="dif">
+                <datalist id="dis">
                     <option value="1" class="text-success" label="- 5 km">
                     <option value="2" class="text-primary" label="10 km">
                     <option value="3" class="text-danger" label="15 km">
                     <option value="4" label="+ 20 km">
                 </datalist>
-                <input class="put" min=1 max=4 type="range" name="range" list="dif" id="range3">
+                <input class="put" min=1 max=4 type="range" name="range" list="dis" id="range2">
 
             </div>
 
@@ -129,13 +129,13 @@
 
             </div>
             <div class="item-flex">
-                <datalist id="dif">
+                <datalist id="dur">
                     <option value="1" class="text-success" label="- 1 h">
                     <option value="2" class="text-primary" label=" 2 h">
                     <option value="3" class="text-danger" label="4 h">
                     <option value="4" label=" + 6 h">
                 </datalist>
-                <input class="put" min=1 max=4 type="range" name="range" list="dif" id="range3">
+                <input class="bg-vert put" min=1 max=4 type="range" name="range" list="dur" id="range3">
 
             </div>
             <div>
@@ -202,7 +202,10 @@
     </main>
 
 
-
+<script>
+// let slider = document.querySelector(".put");
+// slider.style.backgroundColor = "bg-vert";
+</script>
     <!-- Laisser ce script pour avoir un joli menu-->
     <script src="../pageNavBar/navbar.js"></script>
 
