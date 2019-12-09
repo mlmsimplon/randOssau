@@ -67,7 +67,7 @@ aside {
     flex-direction: column;
     width: 100%;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
     color: black;
 }
 
@@ -102,7 +102,8 @@ aside span{
 
 .difficulté{
 
-    color: #77B517;  
+    color: #77B517; 
+  
 
 }
 
@@ -150,7 +151,7 @@ article{
 }
 
 .detailRando{
-    background: green;
+    
     display: flex;
     width: 100%;
     justify-content: center;
@@ -173,17 +174,17 @@ article{
     justify-content: center;
 }
 
-.detail{
-    background: green;
+ .flex-3, .detail{
+    
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
     
 }
 .item{
     flex: 1;
-    border: 1px black solid;
+    
 }
 
 .flex-3{
@@ -196,5 +197,45 @@ article{
 
 button{
     background: red;
+}
 
+.box1{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 30vw;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+h2 {
+    color: black;
+    letter-spacing : 1px;
+    width: 100%;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0;
+    border-radius: 13px;
+    
+}
+
+.box{
+    display: flex;
+    
+    justify-content: space-around;    
+}
+
+.itemFamiliale{
+    color: green;
+}
+
+.itemAverti{
+    color: blue;
+}
+
+.itemSportif{
+    color: red;
 }
