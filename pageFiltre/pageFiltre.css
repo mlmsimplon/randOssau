@@ -67,7 +67,7 @@ aside {
     flex-direction: column;
     width: 100%;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
     color: black;
 }
 
@@ -95,9 +95,9 @@ aside span{
 
 .détailRando{
     display: flex;
-    ;
+    
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
     
     
 
@@ -105,14 +105,15 @@ aside span{
 
 .difficulté{
 
-    color: #77B517;  
+    color: #77B517; 
+  
 
 }
 
 
 .box{
     display: flex;
-    align-items: flex-end;
+    
     align-items: space-around;
     
 }
@@ -132,6 +133,6 @@ color: blue;
 }
 
 i fas fa-crosshairs{
-    margin-top: ;
-  
+    margin-top: 25px;
+    margin-bottom: auto;
 }
