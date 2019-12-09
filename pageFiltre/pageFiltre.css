@@ -95,11 +95,8 @@ aside span{
 
 .détailRando{
     display: flex;
-    ;
     flex-direction: row;
     align-items: flex-start;
-    
-    
 
 }
 
@@ -113,8 +110,7 @@ aside span{
 .box{
     display: flex;
     align-items: flex-end;
-    align-items: space-around;
-    
+    align-items: space-around;    
 }
 
 .difficultéLesBuis{
