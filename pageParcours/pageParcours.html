@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rand'Ossau</title>
+    <title>Navigation GPS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../defautCss.css">
+    <link rel="stylesheet" href="parcours.css">
+    <link rel="stylesheet" href="../pageNavBar/nav.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="../defautCss.css">
-        <link rel="stylesheet" href="../pageNavBar/nav.css">
+    <!-- Code pour faire fonctionner Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <!-- Script pour intégré les données GPX dans Leaflet -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script>
+
+</head>
+
 <body>
+
 
     <header>
         <nav>
@@ -19,19 +36,77 @@
         </nav>
         <h1>
             <!-- Merci de modifié ce titre pour chaque page, merci-->
-            Titre de la page
+            Parcours
         </h1>
     </header>
 
     <main>
-        <a href="coucou">Je suis un lien</a>
+
+        <!-- Id pour que Leaflet intégre la map, nécessite également une taille (CSS)-->
+        <div id="mapid">
+       
+        </div>
+  
+       
+        <footer class="bg-dark">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" class="fas fa-chart-line"></a>
+                    </li>
+                    <li>
+                        <a href="" class="fas fa-book-reader"></a>
+                    </li>
+                    <li>
+                        <a href="" class="fas fa-star"></a>
+                    </li>
+                    <li>
+                        <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
+                    </li>
+                </ul>
+                
+             </nav>
+        </footer>
+
     </main>
 
-    <footer>
 
-    </footer>
+    <script>
+        
+        // Il faut initialisé la map, le set view pointe Londre, [attitude, longitude], zoom
+        let myMap = L.map("mapid").locate({setView: true, maxZoom: 20})
 
-    <!-- Laisser ce script pour avoir un joli menu-->
+        // On ajoute maintenant la carte, (token fourni par mapbox), et on lui fourni quelques propriétés
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ', {
+            attribution: "Carte de test",
+            maxZoom: 20,
+            id: 'mapbox/streets-v11' // mapbox/satelite-v9 pour la vue satellite
+        }).addTo(myMap)
+
+        // Event si localisation activté, ou non
+        myMap.on("locationfound", onLocationFound)
+
+        myMap.on("locationerror", onLocationError)
+
+
+        function onLocationFound(e){
+            // Si la localisation est activté, alors on ajoute un cercle sur la carte
+            let circle = L.circle([e.latlng.lat, e.latlng.lng], {
+                color: "#A8AD1E",
+                fillColor: "#A8AD1E",
+                fillOpacity: 0.5,
+                radius: 200
+            }).addTo(myMap)
+        }
+
+        function onLocationError(){
+            console.log("nope, it didn't work")
+        }
+        // myMap.locate({setView: true, maxZoom: 20})
+
+    </script>
+
+
     <script src="../pageNavBar/navbar.js"></script>
 
 </body>

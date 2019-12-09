@@ -1,4 +1,3 @@
-
 class Link{
     constructor(link, icon, nav){
         this.link = link

@@ -1,5 +1,5 @@
-import { route } from "./route.js";
-import { routeList } from "./routeList.js";
+import { route } from "./route.js.js";
+import { routeList } from "./routeList.js.js";
 
 var routeList1 = new routeList([]);
 'use strict';
