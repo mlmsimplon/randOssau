@@ -25,6 +25,7 @@ main section article{
 h2{
     width: 240px;
     padding-left: 3vw;
+    font-weight: lighter;
 }
 main section:nth-child(2){
     height: 50%;
