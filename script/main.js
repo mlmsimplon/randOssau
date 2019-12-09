@@ -14,9 +14,9 @@ $.when($.getJSON("../assets/circuits.json")).done(function () {
     // search test
     // var results = routeList1.search('nom', 'trois');
     // console.log("first result of search: " + results[0].getProp('nom'));
-    var query = new route("circ", "*", "1", "*", "*", "*", "*", "*");
+    var query = new route("circ", "*", "*", "*", "*", "*", "*", "*");
     var results = routeList1.flitre(query);
-    routeList1.printFiltre(results, routeList1);
+    routeList1.printFiltre(results);
 
 });
 

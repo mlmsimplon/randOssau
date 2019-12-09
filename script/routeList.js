@@ -41,46 +41,40 @@ export class routeList {
         return results;
     }
 
-    matches(full, partial) {
-        return partial.toLowerCase().indexOf(full.toLowerCase()) > -1;
-    }
-
     flitre(query) {
         console.log(query);
-
         let results = [];
         this.list.filter(function (el) {
-            console.log(el.nom);
-            if (this.matches(el.nom, query.nom)) {
-                results.push(el);
-            }
-            else if (this.matches(el.pointdepart, query.pointdepart)) {
-                results.push(el);
-            }
-            else if (el.niveau == query.niveau) {
-                results.push(el);
-            }
-            else if (el.duree <= query.duree) {
-                results.push(el);
-            }
-            else if (el.distance <= query.distance) {
-                results.push(el);
-            }
-            else if (el.elevation <= query.elevation) {
-                results.push(el);
+            if ((query.nom == "*") || (matches(el.nom, query.nom)) &&
+                ((query.pointdepart == "*") || (matches(el.pointdepart, query.pointdepart))) &&
+                ((query.niveau == "*") || (el.niveau == query.niveau)) &&
+                ((query.duree == "*") || (el.duree <= query.duree)) &&
+                ((query.distance == "*") || (el.distance <= query.distance)) &&
+                ((query.elevation == "*") || (el.elevation <= query.elevation))) {
+                // console.log("result found: " + el);
+                    results.push(el);
             }
         });
+        console.log("recherche fini. nombre des resultats : " + results.length);
         return results;
     }
 
     printFiltre(selection) {
-        for (let i = 0; i < this.getLength; i++) {
+        let count = 0;
+        for (let i = 0; i < this.getLength(); i++) {
             for (let j = 0; j < selection.length; j++) {
                 if (this.list[i] == selection[j]) {
-                    console.log(this.list[i]);
+                    count++;
+                    console.log("Numero " + count + " ... " + this.list[i].nom);
                 }
             }
         }
     }
 
+}
+
+function matches(full, partial) {
+    // console.log("does: " + partial + " partially match: " + full);
+    // console.log(full.toLowerCase().indexOf(partial.toLowerCase()) > -1);
+    return full.toLowerCase().indexOf(partial.toLowerCase()) > -1;
 }
