@@ -22,7 +22,7 @@ if(url.searchParams.get("difficulte") == 1 ){
     difficulte.classList.add("text-primary")
 }else if(url.searchParams.get("difficulte") == 3 ){
     difficulte.innerHTML = "Sportif"
-    difficulte.classList.add("text-success")
+    difficulte.classList.add("text-danger")
 }else if(url.searchParams.get("difficulte") == 4 ){
     difficulte.innerHTML = "Extreme"
     difficulte.classList.add("text-dark")
