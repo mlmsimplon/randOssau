@@ -1,4 +1,5 @@
 export class routeList {
+    'use strict';
 
     constructor(list) {
         this.list = list;

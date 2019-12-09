@@ -1,4 +1,6 @@
 export class route {
+    'use strict';
+
     constructor(nom, pointdepart, niveau, pdf, gpx, duree, distance, elevation) {
         this.nom = nom;
         this.pointdepart = pointdepart;
