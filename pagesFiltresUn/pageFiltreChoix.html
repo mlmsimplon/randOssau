@@ -37,12 +37,12 @@
         <article class="article-flex">
 
             <div class="item-flex">
-                <p>
+                <p >
                     <img src="./iconic/cycle.svg" alt="cycle">
                     <img src="./iconic/walk.svg" alt="walk">
                 </p>
                 <p><label class="switch">
-                        <input type="checkbox" name="range" id="range">
+                        <input type="checkbox" name="range" id="checked">
                         <span class="slider">
 
                         </span>
@@ -57,7 +57,7 @@
                 <p>
                 
                     <label class="switch">
-                        <input type="checkbox" name="range" id="range">
+                        <input type="checkbox" name="range" id="check">
                         <span class="slider" id="before">
                     
                         </span>
@@ -89,13 +89,15 @@
 
             </div>
             <div class="item-flex">
-                <datalist id="dif">
+                <datalist id="range">
                     <option value="1" class="text-success" label="Familial">
                     <option value="2" class="text-primary" label="Averti">
                     <option value="3" class="text-danger" label="Sportif">
                     <option value="4" label="Extrême">
                 </datalist>
-                <input class="put" min=1 max=4 type="range" name="range" list="dif" id="range1">
+
+                <input class="put" min=1 max=4 type="range" name="range" list="dif" id="difficulte">
+
 
             </div>
 
@@ -115,7 +117,7 @@
                     <option value="3" class="text-danger" label="15 km">
                     <option value="4" label="+ 20 km">
                 </datalist>
-                <input class="put" min=1 max=4 type="range" name="range" list="dis" id="range2">
+                <input class="put" min=1 max=4 type="range" name="range" list="dis" id="distance">
 
             </div>
 
@@ -135,7 +137,7 @@
                     <option value="3" class="text-danger" label="4 h">
                     <option value="4" label=" + 6 h">
                 </datalist>
-                <input class="bg-vert put" min=1 max=4 type="range" name="range" list="dur" id="range3">
+                <input class="bg-vert put" min=1 max=4 type="range" name="range" list="dur" id="duree">
 
             </div>
             <div>

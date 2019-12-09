@@ -63,7 +63,6 @@ h3 {
         .icons {
             width: 30vw;
             height: 15vh;
-            color: #000000;
             letter-spacing: 0.1em;
             margin-left: 40px;
             margin-right: 40px;
@@ -124,10 +123,23 @@ input[type=range].put {
     box-sizing: border-box;
   
 }
+input[type=range]::-webkit-slider-thumb {
+    
+    height: 30px;
+    width: 10px;
+    
+    background: url("iconic/1.svg");
+    cursor: pointer;
+    -webkit-appearance: none;
+    
+  }
+  
+
 input[type=range]::-ms-track {
 background: transparent;
 border-color: transparent;
 color: transparent;
+
 }
 
 .slider{
@@ -208,6 +220,3 @@ color: transparent;
     margin-left: 3vw;
 }
 
-#dif {
-
-}
