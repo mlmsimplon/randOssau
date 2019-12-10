@@ -16,7 +16,7 @@ $.when($.getJSON("../assets/circuits.json")).done(function () {
 
     var query = new route("circ", "*", "*", "*", "*", "*", "*", "*");
     var results = routeList1.flitre(query);
-    routeList1.printFiltre(results);
+    routeList1.peek(results);
     routeList1.printPageFiltre2(results);
 
 });
@@ -46,4 +46,8 @@ function initializeArray() {
             routeList1.push(thisRoute);
         }
     });
+}
+
+function queryCheck(alteration, category, instruction){
+    
 }

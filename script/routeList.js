@@ -59,7 +59,7 @@ export class routeList {
         return results;
     }
 
-    printFiltre(selection) {
+    peek(selection) {
         let count = 0;
         for (let i = 0; i < this.getLength(); i++) {
             for (let j = 0; j < selection.length; j++) {
@@ -170,16 +170,22 @@ export class routeList {
             divBut.setAttribute("class", "boutons");
             let divBut1 = document.createElement("div");
             divBut1.setAttribute("class", "button");
+            let a = document.createElement("a");
+            a.setAttribute("href", item.gpx);
             img = document.createElement("img");
             img.src = "../assets/icons/map-pin.svg";
-            divBut1.appendChild(img);
+            a.appendChild(img);
+            divBut1.appendChild(a);
             divBut.appendChild(divBut1);
 
             let divBut2 = document.createElement("div");
             divBut2.setAttribute("class", "button");
+            a = document.createElement("a");
+            a.setAttribute("href", item.pdf);
             img = document.createElement("img");
             img.src = "../assets/icons/download.svg";
-            divBut2.appendChild(img);
+            a.appendChild(img);
+            divBut2.appendChild(a);
             divBut.appendChild(divBut2);
 
             //final packaging
@@ -193,6 +199,107 @@ export class routeList {
             x.appendChild(article);
         }
     }
+
+    printPageFiltre(selection) {
+        selection.forEach(print);
+        function print(item) {
+
+            let article = document.createElement("article");
+
+            //titre
+            let h2 = document.createElement("h2");
+            h2.setAttribute("class", "bg-vert");
+            let text = document.createTextNode(item.nom);
+            h2.appendChild(text);
+            article.appendChild(h2);
+
+            //photo + wrapper 1
+            let divDetRan = document.createElement("div");
+            divDetRan.setAttribute("class", "detailRando");
+            let divFlex2 = document.createElement("div");
+            divFlex2.setAttribute("class", "flex-2 row");
+            let img = document.createElement("img");
+            img.src = "../assets/randophoto2.jpeg";
+            divFlex2.appendChild(img);
+            divDetRan.appendChild(divFlex2);
+
+            //flex row 3 -- catégorie
+            let divFlex3 = document.createElement("div");
+            divFlex3.setAttribute("class", "flex-3 row");
+            let divDetail = document.createElement("div");
+            divDetail.setAttribute("class", "detail");
+            let divItemFam = document.createElement("div");
+            divItemFam.setAttribute("class", "itemFamiliale");
+            text = document.createTextNode(item.niveau);
+            divItemFam.appendChild(text);
+            divDetail.appendChild(divItemFam);
+
+            //3 items -- duree, distance, elevation
+            //duree
+            categorie('far fa-clock', item.duree);
+            //distance
+            categorie('fas fa-hiking', item.distance);
+            //elevation
+            categorie('fas fa-chart-line', item.elevation);
+
+            let divItem4 = document.createElement("div");
+            divItem4.setAttribute("class", "item");
+            divDetail.appendChild(divItem4);
+            divFlex3.appendChild(divDetail);
+
+            //point de depart
+            let divDetItem = document.createElement("div");
+            divDetItem.setAttribute("class", "detail item");
+            let i = document.createElement("i");
+            i.setAttribute("class", "fas fa-crosshairs");
+            text = document.createTextNode(item.pointdepart);
+            divDetItem.appendChild(i);
+            divDetItem.appendChild(text);
+            divFlex3.appendChild(divDetItem);
+
+            //"box"
+            let box = document.createElement("div");
+            box.setAttribute("class", "box");
+            box("fas fa-map-marker-alt", item.gpx);
+            box("fas fa-download", item.pdf);
+            divFlex3.appendChild(box);
+
+            //wrappings
+            divDetRan.appendChild(divFlex3);
+            article.appendChild(divDetRan);
+
+
+            function categorie(classCss, itemId) {
+                let divItem = document.createElement("div");
+                divItem.setAttribute("class", "item");
+                let divCenter = document.createElement("div");
+                divCenter.setAttribute("class", "text-center");
+                let divIcon = document.createElement("div");
+                divIcon.setAttribute("class", classCss);
+                divCenter.appendChild(divIcon);
+                divItem.appendChild(divCenter);
+                let divCenter3 = document.createElement("div");
+                divCenter3.setAttribute("class", "text-center");
+                let text = document.createTextNode(itemId);
+                divCenter3.appendChild(text);
+                divItem.appendChild(divCenter30);
+                divDetail.appendChild(divItem);
+            }
+
+            function box(classCss, href) {
+                let box1 = document.createElement("div");
+                box1.setAttribute("class", "box1 bg-vert");
+                let a1 = document.createElement("a");
+                a.setAttribute("href", href);
+                let i1 = document.createElement("i");
+                i1.setAttribute("class", classCss);
+                i1.appendChild(a1);
+                box1.appendChild(i1);
+                box.appendChild(box1);
+            }
+        }
+    }
+
 }
 
 function matches(full, partial) {

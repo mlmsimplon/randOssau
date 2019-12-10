@@ -16,7 +16,12 @@ export class route {
         return this[prop];
     }
 
-    print(){
-        
+    isSpecified() {
+        if (this[prop] == "*") {
+            return false;
+        }
+        else {
+            return true;
+        }
     }
 }
