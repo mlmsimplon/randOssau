@@ -5,9 +5,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/01.-La-Bastide.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Rebenacq.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h",
+        "distance": "2.2",
+        "elevation": "60"
     },
     {
         "nom": "Le vieux château",
@@ -15,9 +15,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2018/11/64.-Le-vieux-ch%C3%A2teau-version-d%C3%A9finitive.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2018/11/Trace-GPX-Vieux-ch%C3%A2teau.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "3.6",
+        "elevation": "135"
     },
     {
         "nom": "Le piémont ossalois (Circ. Patrimoine)",
@@ -25,9 +25,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/02.-le-pi%C3%A9mont-ossalois.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Lys-1.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "4.4",
+        "elevation": "120"
     },
     {
         "nom": "Les trois croix",
@@ -35,9 +35,9 @@
         "niveau": "2",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/03.-Les-trois-croix.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Trois_croix.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h50",
+        "distance": "4.6",
+        "elevation": "210"
     },
     {
         "nom": "Le tour du dolmen",
@@ -45,9 +45,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/04.-Le-tour-du-dolmen.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Tour_du_dolmen.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "2h30",
+        "distance": "10",
+        "elevation": "250"
     },
     {
         "nom": "Les chênes",
@@ -55,9 +55,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/05.-Les-ch%C3%AAnes.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Les_chenes.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "3.8",
+        "elevation": "90"
     },
     {
         "nom": "Les pierres (Circ. Patrimoine)",
@@ -65,9 +65,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/06.-Les-pierres.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Arudy.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1",
+        "distance": "2.3",
+        "elevation": "40"
     },
     {
         "nom": "Le lac de Castet",
@@ -75,9 +75,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/07.-Le-lac-de-castet.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/Circuit-du-lac-de-Castet-pour-web.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h10",
+        "distance": "3.4",
+        "elevation": "15"
     },
     {
         "nom": "La jurade (Circ. Patrimoine)",
@@ -85,9 +85,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/08.-La-jurade.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Bielle.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h",
+        "distance": "1.6",
+        "elevation": "30"
     },
     {
         "nom": "Les cercles de pierres",
@@ -95,9 +95,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/09.-Les-cercles-de-pierre.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Cercles_de_pierres.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "3.7",
+        "elevation": "200"
     },
     {
         "nom": "Le Turon de Técouère",
@@ -105,9 +105,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/10.-Le-Turon-de-Tecou%C3%A8re.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Turon_de_Tecouere.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h25",
+        "distance": "6.3",
+        "elevation": "120"
     },
     {
         "nom": "L'eau (Circ. Patrimoine)",
@@ -115,9 +115,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/11-Leau.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Laruns.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "5",
+        "elevation": "125"
     },
     {
         "nom": "La promenade horizontale",
@@ -125,9 +125,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/12.-La-promenade-horizontale.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX__Promenade_horizontale.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "3.8",
+        "elevation": "140"
     },
     {
         "nom": "Les thermes (Circ. Patrimoine)",
@@ -135,9 +135,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/13.-Les-thermes.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Eaux-Bonnes.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "3.8",
+        "elevation": "330"
     },
     {
         "nom": "Les mines de Baburet (Circ. Patrimoine)",
@@ -145,9 +145,9 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/14.-Les-mines-de-Baburet.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/Circuit-des-mines-de-Baburet-modifi%C3%A9.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "2.9",
+        "elevation": "190"
     },
     {
         "nom": "Les buis",
@@ -155,9 +155,9 @@
         "niveau": "2",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/15.-Les-buis.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/Trace-GPX-pour-web.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h50",
+        "distance": "6.4",
+        "elevation": "300"
     },
     {
         "nom": "Le Larroun",
@@ -165,9 +165,9 @@
         "niveau": "2",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/16.-Le-Larroun.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Le_Larroun.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "2h",
+        "distance": "4.7",
+        "elevation": "345"
     },
     {
         "nom": "Les cercles de pierres/Départ Bilhères",
@@ -175,9 +175,9 @@
         "niveau": "2",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/17.-Les-cercles-de-pierres-d%C3%A9part-Bilh%C3%A8res.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Cercles_de_pierres_-_depart_Bilheres.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "3h",
+        "distance": "7.5",
+        "elevation": "320"
     },
     {
         "nom": "L'Arriu Mage",
@@ -185,9 +185,9 @@
         "niveau": "2",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/18.-LArriu-Mage.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Arriu_Mage_modifie.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "2h",
+        "distance": "6.5",
+        "elevation": "365"
     },
     {
         "nom": "La fontaine d'Esteret",
@@ -195,9 +195,9 @@
         "niveau": "2",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/19.-La-fontaine-dEsteret.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Fontaine_d_Esteret.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "2h",
+        "distance": "4",
+        "elevation": "345"
     },
     {
         "nom": "Les carrières (Circ. Patrimoine)",
@@ -205,9 +205,9 @@
         "niveau": "2",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/20.-Les-carri%C3%A8res.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/Trace-Circuit-des-carri%C3%A8res-V2.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "1h30",
+        "distance": "3",
+        "elevation": "250"
     },
     {
         "nom": "La promenade des 3 villages",
@@ -215,9 +215,9 @@
         "niveau": "2",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/21.-La-promenade-des-3-villages.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Trois_villages.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "2h",
+        "distance": "5",
+        "elevation": "300"
     },
     {
         "nom": "Le piémont du Rey",
@@ -225,9 +225,9 @@
         "niveau": "3",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/22.-Le-pi%C3%A9mont-du-Rey.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Le_Piemont_du_Rey.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "4h",
+        "distance": "8.5",
+        "elevation": "700"
     },
     {
         "nom": "Le piémont du Rey (option longue)",
@@ -235,9 +235,9 @@
         "niveau": "4",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2019/07/Fiche-PDF-pour-web.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2019/07/Trace-Rey.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "5h30",
+        "distance": "8.9",
+        "elevation": "1000"
     },
     {
         "nom": "La cabane Lasbordes",
@@ -245,9 +245,9 @@
         "niveau": "3",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/23.-La-cabane-Lasbordes.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Cabane_de_Lasbordes.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "5h15",
+        "distance": "12.6",
+        "elevation": "625"
     },
     {
         "nom": "Le pic d'Escurets",
@@ -255,9 +255,9 @@
         "niveau": "3",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/24.-Le-pic-dEscurets.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Pic_d_Escurets.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "3h30",
+        "distance": "6.6",
+        "elevation": "380"
     },
     {
         "nom": "Les cinq monts",
@@ -265,9 +265,9 @@
         "niveau": "3",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/25-Les-cinq-monts.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Les_cinq_Monts.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "3h",
+        "distance": "6.2",
+        "elevation": "550"
     },
     {
         "nom": "La montagne verte",
@@ -275,9 +275,9 @@
         "niveau": "3",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/26-Montagne-verte.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_La_montagne_verte.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "3h15",
+        "distance": "10",
+        "elevation": "610"
     },
     {
         "nom": "Les crêtes d'Andreyt",
@@ -285,9 +285,9 @@
         "niveau": "3",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/27.-Les-cr%C3%AAtes-dAndreyt.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Les_cretes_d_Andreyt.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "3h",
+        "distance": "9",
+        "elevation": "350"
     },
     {
         "nom": "Le Tour du Bassin d'Arudy",
@@ -305,9 +305,9 @@
         "niveau": "4",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/29.-Le-tour-du-Rey.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Le_tour_du_Rey.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "5h30",
+        "distance": "19.6",
+        "elevation": "560"
     },
     {
         "nom": "Le lac d'Isabe",
@@ -315,9 +315,9 @@
         "niveau": "4",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/30.-Le-lac-dIsabe.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Lac_d_Isabe.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "6h",
+        "distance": "10.8",
+        "elevation": "1130"
     },
     {
         "nom": "La cabane Laiterine",
@@ -325,9 +325,9 @@
         "niveau": "4",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/31.-La-cabane-Laiterine-et-les-lacs-du-Montagnon.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Cabane_Laiterine.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "9h",
+        "distance": "23",
+        "elevation": "1200"
     },
     {
         "nom": "Le lac d'Er",
@@ -335,9 +335,9 @@
         "niveau": "4",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/32.-Le-lac-dEr.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Lac_d_Er.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "5h",
+        "distance": "8.3",
+        "elevation": "1079"
     },
     {
         "nom": "Le vallon du Soussoueou",
@@ -345,9 +345,9 @@
         "niveau": "4",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/33.-Le-vallon-du-Soussoueou.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Vallon_du_Soussoueou.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "6h",
+        "distance": "13.5",
+        "elevation": "950"
     },
     {
         "nom": "Le lac d'Anglas (sur GR10)",
@@ -355,8 +355,8 @@
         "niveau": "3",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/34.Le-lac-dAnglas.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Lac_d_Anglas.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "4h",
+        "distance": "7.5",
+        "elevation": "700"
     }
 ]
