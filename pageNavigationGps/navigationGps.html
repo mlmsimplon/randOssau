@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,23 +42,23 @@
 
     <main>
 
-        <div id='map'></div>
+        <!-- Id pour que Leaflet intégre la map, nécessite également une taille (CSS)-->
+        <div id="mapid">
+          
 
+            <!-- Un bouton, avec un positionnement a la leaflet-->
+            <div class="leaflet-right leaflet-top fas fa-location-arrow" id="gps"></div>
+        </div>
+  
+       
         <footer class="bg-dark">
             <nav>
                 <ul>
                     <li>
-<<<<<<< HEAD
-=======
                         <a href="" class="fas fa-chart-line"></a>
                     </li>
                     <li>
-<<<<<<< HEAD
->>>>>>> a6ac7260f322270cd265ed449c0b7be76188323f
-                        <a href="" class="fas fa-book-reader"></a>
-=======
                         <a href="../pageRecommandationDuParcNational/pageRecommandation.html" class="fas fa-book-reader"></a>
->>>>>>> f8d822a4b284d69b1454207f85e07d28c700b818
                     </li>
                     <li>
                         <a href="" class="fas fa-star"></a>
@@ -68,60 +67,12 @@
                         <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
                     </li>
                 </ul>
-<<<<<<< HEAD
-            </nav>
-=======
                 
              </nav>
->>>>>>> a6ac7260f322270cd265ed449c0b7be76188323f
         </footer>
 
     </main>
 
-<<<<<<< HEAD
-    <article>
-        <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
-        <div id='map' style='width: 400px; height: 300px;'></div>
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ';
-            var map = new mapboxgl.Map({ container: 'map', style: 'mapbox://styles/mapbox/streets-v11' });
-        </script>
-    </article>
-
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../pageRegles/pageRegles.html" class="fas fa-book-reader"></a>
-                </li>
-                <li>
-                    <a href="" class="fas fa-star"></a>
-                </li>
-                <li>
-                    <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: { lat: 43.3193942, Ing: -0.3655022];
-            zoom: 16,
-            localIdeographFontFamily: "'Noto Sans', 'Noto Sans CJK SC', sans-serif"
-        });
-
-        map.addControl(new mapboxgl.GeolocateControl({
-            positionOptions: {
-                enableHighAccuracy: true
-            },
-            trackUserLocation: true
-        }));
-    </script>
-=======
 
     <script>
         
@@ -146,9 +97,7 @@
     </script>
 
 
->>>>>>> a6ac7260f322270cd265ed449c0b7be76188323f
     <script src="../pageNavBar/navbar.js"></script>
 
 </body>
-
 </html>
