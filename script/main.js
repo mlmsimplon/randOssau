@@ -9,16 +9,15 @@ var routeList1 = new routeList([]);
 initializeArray();
 
 $.when($.getJSON("../assets/circuits.json")).done(function () {
-
-    //après le tableau est chargé
+    //après la tableau est chargé
     console.log("number of routes: " + routeList1.getLength());
     console.log("routes : " + routeList1.list);
-    // search test
-    // var results = routeList1.search('nom', 'trois');
-    // console.log("first result of search: " + results[0].getProp('nom'));
+
+
     var query = new route("circ", "*", "*", "*", "*", "*", "*", "*");
     var results = routeList1.flitre(query);
     routeList1.printFiltre(results);
+    routeList1.printPageFiltre2(results);
 
 });
 
