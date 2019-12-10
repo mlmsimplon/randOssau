@@ -1,6 +1,8 @@
 import { route } from "./route.js";
 import { routeList } from "./routeList.js";
 
+const durRange = ['1h', '1h10', '1h25', '1h30', '1h50', '2h', '2h30', '3h', '3h15', '3h30', '4h', '4h30', '5h15', '5h30', '6h', '9h'];
+
 var routeList1 = new routeList([]);
 'use strict';
 

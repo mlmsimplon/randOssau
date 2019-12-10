@@ -65,7 +65,7 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/06.-Les-pierres.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Arudy.gpx",
-        "duree": "1",
+        "duree": "1h",
         "distance": "2.3",
         "elevation": "40"
     },
@@ -295,9 +295,9 @@
         "niveau": "4",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/28.-Le-tour-du-Bassin-dArudy.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Tour_du_Bassin_d_Arudy.gpx",
-        "duree": "",
-        "distance": "",
-        "elevation": ""
+        "duree": "5h30",
+        "distance": "19.6",
+        "elevation": "560"
     },
     {
         "nom": "Le tour du Rey",
@@ -305,9 +305,9 @@
         "niveau": "4",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/29.-Le-tour-du-Rey.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Le_tour_du_Rey.gpx",
-        "duree": "5h30",
-        "distance": "19.6",
-        "elevation": "560"
+        "duree": "4h30",
+        "distance": "11.2",
+        "elevation": "860"
     },
     {
         "nom": "Le lac d'Isabe",
