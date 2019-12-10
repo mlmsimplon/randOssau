@@ -1,0 +1,47 @@
+[
+    {
+        "icon": "../assets/icons/rchien.png",
+        "titre": "Pas de chien, même tenu en laisse",
+        "justicatif": "pour la tranquilité des animaux sauvages et domestiques."
+    },
+    {
+        "icon": "../assets/icons/rfleur.png",
+        "titre": "Ni cueillette ni prévèlement",
+        "justicatif": "animaux, plantes, minéraux et fossiles appartiennent au paysage."
+    },
+    {
+        "icon": "../assets/icons/rarme.png",
+        "titre": "Pas d'arme",
+        "justicatif": "ici tous les animaux sont protégés."
+    },
+    {
+        "icon": "../assets/icons/rdechet.png",
+        "titre": "Pas de déchets",
+        "justicatif": "pour conserver la nature propre."
+    },
+    {
+        "icon": "../assets/icons/rfeu.png",
+        "titre": "Pas de feu",
+        "justicatif": "pour éviter incendies et dégradations du sol."
+    },
+    {
+        "icon": "../assets/icons/rbruit.png",
+        "titre": "Ni bruit ni dérangement",
+        "justicatif": "pour la quiétude de tous."
+    },
+    {
+        "icon": "../assets/icons/rtente.png",
+        "titre": "Pas de camping, pas de caravaning",
+        "justicatif": "pour préserver la beauté des sites et éviter les pollutions."
+    },
+    {
+        "icon": "../assets/icons/rvoiture.png",
+        "titre": "Pas de véhicule",
+        "justicatif": "cet espace se découvre à pied, circulation interdite en dehors des voies autorisées."
+    },
+    {
+        "icon": "../assets/icons/rvelo.png",
+        "titre": "Pas de velo tout terrain",
+        "justicatif": "le territoire et les sentiers ne peuvent supporter d'autre fréquentation que pédestre."
+    }
+]

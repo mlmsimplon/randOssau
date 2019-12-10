@@ -1,5 +1,3 @@
-
-    console.log("getText called");
     $.getJSON("../assets/circuits.json", function (data) {
         console.log(data);
         //import the text

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regles</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../defautCss.css">
+    <link rel="stylesheet" href="../pageNavBar/nav.css">
+    <style>
+        header h1 {
+            padding: 35px;
+            text-align: center;
+        }
+
+        .flip {
+            transform: rotate(180deg);
+            margin-top: 4vh;
+            margin-left: 3vw;
+            height: 5vh;
+            width: 5vh;
+        }
+
+        div {
+            background-color: white;
+            color: black;
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+            grid-template-rows: 1fr;
+            height: 8vh;
+            border-radius: 13px;
+            margin: 2.5vh 2.5vh;
+        }
+
+        div p span {
+            font-weight: 800;
+        }
+
+        div p,
+        div img {
+            margin: 0;
+            margin-left: 10px;
+        }
+
+        div p {
+            font-size: 0.8em;
+        }
+
+        div img {
+            height: 8vh;
+            width: 8vh;
+        }
+    </style>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+
+            </ul>
+        </nav>
+        <h1>
+            Règles du Parc National des Pyrénees
+        </h1>
+    </header>
+
+    <main>
+        <a href="../pageNavigationGps/navigationGps.html"><img class="flip" src="../assets/icons/arrow.svg"></a>
+        <article id="target"></article>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Laisser ce script pour avoir un joli menu-->
+    <script src="../pageNavBar/navbar.js"></script>
+    <script src="../assets/jquery-3.4.1.js"></script>
+    <script src="pageRegles.js"></script>
+</body>
+
+</html>
