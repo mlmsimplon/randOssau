@@ -10,7 +10,7 @@ $.getJSON("../assets/regles.json", function (data) {
         img.src = data[i].icon;
         div.appendChild(img);
 
-        //texte fort
+        //texte fort 
         let p = document.createElement("p");
         let span = document.createElement("span");
         let text = document.createTextNode(data[i].titre + " ");
