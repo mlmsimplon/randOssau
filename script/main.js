@@ -1,22 +1,23 @@
 import { route } from "./route.js";
 import { routeList } from "./routeList.js";
 
+const durRange = ['1h', '1h10', '1h25', '1h30', '1h50', '2h', '2h30', '3h', '3h15', '3h30', '4h', '4h30', '5h15', '5h30', '6h', '9h'];
+
 var routeList1 = new routeList([]);
 'use strict';
 
 initializeArray();
 
 $.when($.getJSON("../assets/circuits.json")).done(function () {
-
-    //après le tableau est chargé
+    //après la tableau est chargé
     console.log("number of routes: " + routeList1.getLength());
     console.log("routes : " + routeList1.list);
-    // search test
-    // var results = routeList1.search('nom', 'trois');
-    // console.log("first result of search: " + results[0].getProp('nom'));
+
+
     var query = new route("circ", "*", "*", "*", "*", "*", "*", "*");
     var results = routeList1.flitre(query);
-    routeList1.printFiltre(results);
+    routeList1.peek(results);
+    routeList1.printPageFiltre2(results);
 
 });
 
@@ -45,4 +46,8 @@ function initializeArray() {
             routeList1.push(thisRoute);
         }
     });
+}
+
+function queryCheck(alteration, category, instruction){
+    
 }
