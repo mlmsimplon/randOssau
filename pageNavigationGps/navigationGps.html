@@ -7,7 +7,7 @@
     <title>Navigation GPS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="../defautCss.css">
-    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="navigationGps.css">
     <link rel="stylesheet" href="../pageNavBar/nav.css">
 
     <!-- Code pour faire fonctionner Leaflet-->
@@ -36,7 +36,7 @@
         </nav>
         <h1>
             <!-- Merci de modifié ce titre pour chaque page, merci-->
-            Localisation
+            Parcours
         </h1>
     </header>
 
@@ -44,10 +44,7 @@
 
         <!-- Id pour que Leaflet intégre la map, nécessite également une taille (CSS)-->
         <div id="mapid">
-          
-
-            <!-- Un bouton, avec un positionnement a la leaflet-->
-            <div class="leaflet-right leaflet-top fas fa-location-arrow" id="gps"></div>
+       
         </div>
   
        
@@ -58,7 +55,7 @@
                         <a href="" class="fas fa-chart-line"></a>
                     </li>
                     <li>
-                        <a href="../pageRecommandationDuParcNational/pageRecommandation.html" class="fas fa-book-reader"></a>
+                        <a href="" class="fas fa-book-reader"></a>
                     </li>
                     <li>
                         <a href="" class="fas fa-star"></a>
@@ -77,7 +74,7 @@
     <script>
         
         // Il faut initialisé la map, le set view pointe Londre, [attitude, longitude], zoom
-        let myMap = L.map("mapid").setView([43.30, -0.366667], 13)
+        let myMap = L.map("mapid").locate({setView: true, maxZoom: 20})
 
         // On ajoute maintenant la carte, (token fourni par mapbox), et on lui fourni quelques propriétés
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmFuZG9zc2F1IiwiYSI6ImNrM3ExZGRqYTA4ZjYzbm5qNnVrYzQyZjYifQ.HPLiaT33-w1JlP964Hl5FQ', {
@@ -86,13 +83,26 @@
             id: 'mapbox/streets-v11' // mapbox/satelite-v9 pour la vue satellite
         }).addTo(myMap)
 
-        // Fonctionne avec le plugin pour ajouté un fichier gpx pour l'afficher sur la carte
-        // https://github.com/mpetazzoni/leaflet-gpx pour la doc
-        let gpx = "Fichier_GPX_Patrimoine_Lys-1.gpx"
-        new L.GPX(gpx, {async: true}).on('loaded', function(e){
-            myMap.fitBounds(e.target.getBounds())
-            console.log(e.target.get_distance()/1000    ) // function retournant la distance total .. 
-        }).addTo(myMap)
+        // Event si localisation activté, ou non
+        myMap.on("locationfound", onLocationFound)
+
+        myMap.on("locationerror", onLocationError)
+
+
+        function onLocationFound(e){
+            // Si la localisation est activté, alors on ajoute un cercle sur la carte
+            let circle = L.circle([e.latlng.lat, e.latlng.lng], {
+                color: "#A8AD1E",
+                fillColor: "#A8AD1E",
+                fillOpacity: 0.5,
+                radius: 200
+            }).addTo(myMap)
+        }
+
+        function onLocationError(){
+            console.log("nope, it didn't work")
+        }
+        // myMap.locate({setView: true, maxZoom: 20})
 
     </script>
 

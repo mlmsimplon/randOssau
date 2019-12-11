@@ -120,8 +120,14 @@ input[type=range]::-webkit-slider-thumb {
     width: 10px;
     background: url("iconic/1.svg");
     cursor: pointer;
+<<<<<<< HEAD
     -webkit-appearance: none;
 }
+=======
+    -webkit-appearance: none;   
+  }
+  
+>>>>>>> 4dc4c436eb7657f9001282d37cac39bdabe8c3d1
 
 input[type=range]::-ms-track {
     background: transparent;
