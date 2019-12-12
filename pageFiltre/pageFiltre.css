@@ -141,6 +141,7 @@ section{
     width: 100%;
     flex-direction: column;
     color: black;
+    align-items: center;
 }
 
 article{
@@ -206,7 +207,8 @@ article{
 }
 
 button{
-    background: red;
+    width: fit-content;
+
 }
 
 .box1{
