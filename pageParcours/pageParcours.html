@@ -76,6 +76,8 @@
 
     <script>
         
+         
+
         // Il faut initialisé la map, le set view pointe Londre, [attitude, longitude], zoom
         let myMap = L.map("mapid").setView([43.30, -0.366667], 13)
 
@@ -88,11 +90,40 @@
 
         // Fonctionne avec le plugin pour ajouté un fichier gpx pour l'afficher sur la carte
         // https://github.com/mpetazzoni/leaflet-gpx pour la doc
-        let gpx = "Fichier_GPX_Patrimoine_Lys-1.gpx"
-        new L.GPX(gpx, {async: true}).on('loaded', function(e){
+
+
+        let xhr = new XMLHttpRequest()
+
+            xhr.onreadystatechange = function (){
+                if(xhr.status === 200){
+                    if(xhr.readyState === 4){
+                        let x = JSON.parse(xhr.response)
+                        recupereGpx(x, getUrl())
+                    }
+
+                }
+            }
+        xhr.open("GET", "../assets/circuits.json", true)
+        xhr.send()
+
+        function getUrl(){
+            let url_string = window.location.href
+            let url = new URL(url_string)
+            let c = url.searchParams.get("num")
+            return c
+        }
+
+        function recupereGpx(gpx){
+            let num = getUrl()
+            let lol = gpx[num].gpxLocal
+
+            new L.GPX(lol, {async: true}).on('loaded', function(e){
             myMap.fitBounds(e.target.getBounds())
             console.log(e.target.get_distance()/1000    ) // function retournant la distance total .. 
-        }).addTo(myMap)
+           }).addTo(myMap)
+        }
+
+
 
     </script>
 

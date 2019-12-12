@@ -5,6 +5,7 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/01.-La-Bastide.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Rebenacq.gpx",
+        "gpxLocal": "../assets/gpx/Fichier_GPX_Patrimoine_Rebenacq.gpx",
         "duree": "1h",
         "distance": "2.2",
         "elevation": "60"
@@ -15,6 +16,7 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2018/11/64.-Le-vieux-ch%C3%A2teau-version-d%C3%A9finitive.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2018/11/Trace-GPX-Vieux-ch%C3%A2teau.gpx",
+        "gpxLocal": "../assets/gpx/Trace-GPX-Vieux-château.gpx",
         "duree": "1h30",
         "distance": "3.6",
         "elevation": "135"
@@ -25,6 +27,7 @@
         "niveau": "1",
         "pdf": "https://www.valleedossau-tourisme.com/wp-content/uploads/2017/07/02.-le-pi%C3%A9mont-ossalois.pdf",
         "gpx": "https://www.valleedossau-tourisme.com/wp-content/uploads/2016/02/Fichier_GPX_Patrimoine_Lys-1.gpx",
+        "gpxLocal": "../assets/gpx/Fichier_GPX_Patrimoine_Lys-1.gpx",
         "duree": "1h30",
         "distance": "4.4",
         "elevation": "120"

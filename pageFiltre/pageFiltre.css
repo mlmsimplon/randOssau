@@ -239,3 +239,7 @@ h2 {
 .itemSportif{
     color: red;
 }
+
+.box > a{
+    color: black;
+}
