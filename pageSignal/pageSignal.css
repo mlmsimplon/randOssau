@@ -9,6 +9,7 @@ body {
 
 button {
     border: inherit;
+   
 }
 
 header{
@@ -98,3 +99,74 @@ body>div>button:nth-of-type(1) {
 body>div>button:nth-of-type(2) {
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+   
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed; 
+    cursor: default; 
+}
+     
+    
+.overlay:target {
+    display: block;
+}
+     
+    
+.popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    
+    z-index: 20;
+    margin: 0;
+    
+    min-width: 320px;
+    max-width: 600px;
+    
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #3D3D3D;;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+ .popup-text {
+    font-size: 20px;
+} 
+
+.popup-button {
+    background-color: #FF7A00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.5);
+    height: 20vw;
+    width: 70vw;
+    
+   
+}
+.overlay:target+.popup {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+     
+   
