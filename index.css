@@ -1,6 +1,15 @@
+
+@font-face {
+    font-family: "Origin Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("OriginLight"), url("../randOssau/assets/polices/OriginLight.otf");
+       
+}
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -86,7 +95,7 @@ div button {
 }
 
 div button p {
-    font-family: Roboto;
+    font-family: "Origin Light";
     font-style: normal;
     font-weight: 550;
     font-size: 1em;

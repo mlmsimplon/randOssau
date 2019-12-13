@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Origin Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("OriginLight"), url("../randOssau/assets/polices/OriginLight.otf"),
+        
+}
+
+
+
 main{
     padding:0;
     margin: 0;
@@ -91,6 +101,7 @@ button{
 }
 
 h2 {
+    font-family: "Origin Light";
     color: black;
     letter-spacing : 1px;
     width: 100%;
@@ -105,6 +116,5 @@ h2 {
 
 .box{
     display: flex;
-    
     justify-content: space-around;    
 }
