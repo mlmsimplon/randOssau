@@ -58,7 +58,7 @@
                         <a href="" class="fas fa-book-reader"></a>
                     </li>
                     <li>
-                        <a href="" class="fas fa-star"></a>
+                        <a href="" class="fas fa-star" id="pointInteret"></a>
                     </li>
                     <li>
                         <a href="../pageSignal/pageSignal.html" class="fas fa-exclamation-triangle"></a>
@@ -103,6 +103,28 @@
             console.log("nope, it didn't work")
         }
         // myMap.locate({setView: true, maxZoom: 20})
+
+
+        let pointInteret = document.getElementById("pointInteret")
+
+        let poiValid = 0
+
+
+        pointInteret.addEventListener("click", function(e){
+            e.preventDefault()
+            if(poiValid === 0){
+                poi = L.marker([43.29, -0.3708]).addTo(myMap)
+                poi2 = L.marker([43.31, -0.3608]).addTo(myMap)    
+                poiValid = 1
+            }else{
+                console.log(poiValid)
+                myMap.removeLayer(poi)
+                myMap.removeLayer(poi2)
+                poiValid = 0
+            }
+        })
+
+        // Mettre des points d'interets, c'est bien , mais encore faut il avoir des coordonnées.
 
     </script>
 
