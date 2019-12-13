@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: "Origin Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("OriginLight"), url("../randOssau/assets/polices/OriginLight.otf");
+        
+}
 
 html, body{
     background-color: #3D3D3D;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Origin Light";
     color: white;
     padding: 0;
     margin: 0;
@@ -55,6 +62,6 @@ a{
 }
 
 .ff{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Origin Light';
     
 }
