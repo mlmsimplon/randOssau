@@ -66,7 +66,7 @@ div div button {
     margin-right: 10vw;
     margin-top: 5vh;
     margin-bottom: 1vw;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.5); */
 }
 
 div div button img {
@@ -135,7 +135,8 @@ body>div>button:nth-of-type(2) {
     
     z-index: 20;
     margin: 0;
-    
+    background-color: #3D3D3D;;
+    !important;
     min-width: 320px;
     max-width: 600px;
     
@@ -154,7 +155,7 @@ body>div>button:nth-of-type(2) {
 } 
 
 .popup-button {
-    background-color: #FF7A00;
+    background-color: #f3a100;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 20px rgba(0, 0, 0, 0.5);
     height: 20vw;
     width: 70vw;
